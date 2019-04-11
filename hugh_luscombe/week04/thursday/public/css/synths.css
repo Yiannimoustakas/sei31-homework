@@ -27,7 +27,7 @@ nav {
 }
 
 nav:hover {
-
+  background-color: grey;
 }
 
 nav a {
