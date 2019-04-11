@@ -1,0 +1,16 @@
+<h2><%= @synth["brand"] %> <%= @synth["name"] %></h2>
+<h3>
+  <p>
+    <%= @synth["polyphony"] %>
+    voice polyphony
+  </p>
+</h3>
+
+<% unless @synth["image"].nil? %>
+  <img class="feature" src="<%= @synth["image"] %>" alt="<%= @synth["name"] %>">
+<% end %>
+
+<div class="controls">
+  <a href="/synths/<%= @synth["id"] %>/edit">Edit</a>
+  <a href="/synths/<%= @synth["id"] %>/delete">Delete</a>
+</div>
