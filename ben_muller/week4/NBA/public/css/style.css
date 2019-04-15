@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+body {
+  background-image: url("../images/court3.png");
+  background-size: cover;
+  font-family: 'Ubuntu', sans-serif;
+  color: rgb(232, 133, 17);
+  font-weight: bolder;
+  text-shadow: 1px 1px 1px black;
+  text-align: center;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  color: rgb(11, 133, 194);
+}
+
+nav a {
+  color: rgb(227, 36, 24);
+  text-transform: uppercase;
+  margin: 0 30px;
+  font-size: 22px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+label {
+  margin: 10px;
+  justify-content: center;
+}
+
+input {
+  margin-left: 20px;
+  background-color: yellow;
+}
+
+.button {
+  width: 250px;
+  margin: 10px;
+  justify-content: center;
+  align-self: center;
+  background-color: red;
+  color: white;
+  text-transform: uppercase;  
+  border-radius: 1em;
+}
+
+.guards, .others {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+img {
+  width: 200px;
+  height: 300px;
+  border-radius: 2em;
+  box-shadow: 5px 6px rgb(74, 157, 122);
+  margin-bottom: 40px;
+}
+
+.edit-del  a {
+  color: rgb(227, 36, 24);
+  text-transform: uppercase;
+  margin: 0 30px;
+  font-size: 22px;
+}

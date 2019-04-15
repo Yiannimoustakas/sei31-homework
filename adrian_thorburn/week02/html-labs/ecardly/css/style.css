@@ -1,0 +1,82 @@
+/*
+Project Name: Ecard.ly
+Client: General Assembly
+Author: Christopher Castig | @castig
+Developer @GA in NYC
+
+
+Text Color: #000000
+Link Color: #cc6633
+
+Container Width: 940px
+Left Columm (#main): 640px
+Right Column (#sidebar): 280px
+
+*/
+
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+background-color: #d6d6d6;
+
+}
+
+h1#technique-one {
+  height: 200px;
+  background-image: url("../images/background.jpg");
+  background-repeat: repeat-x;
+  padding-top: 0px;
+  margin-top: 0px;
+  margin-bottom: 100px;
+}
+h1#technique-one span {
+  display: none;
+}
+p {
+  background-color: white;
+}
+.card-content {
+  display: flex;
+}
+div {
+  width: 940px;
+  height: 640px;
+  margin-left: 200px;
+  margin-right: 280px;
+  background-color: white;
+  left: 50%;
+}
+img {
+padding-left: 20px;
+background-color: white;
+}
+h2 {
+  background-color: white;
+  padding-top: 25px;
+  padding-left:20px;
+}
+
+img#logo {
+  margin-left: 340px;
+  margin-right: 280px;
+  background-color: #ffffff00;
+  position: absolute;
+  top: 40px;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}

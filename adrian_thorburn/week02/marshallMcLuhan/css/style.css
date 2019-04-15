@@ -1,0 +1,94 @@
+/* this helps debug your page layout*/
+/* * {border: 1px solid lime;} */
+/* this helps debug your page layout*/
+
+/*font*/
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:400,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  background-color: #444;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 960px; /*this is a standard width, good for most screens*/
+  margin: 0 auto;
+  background-color: #ccc;
+  padding: 2em;
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+}
+
+nav {
+  text-align: center;
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #333333;
+  display: flex;
+  flex-direction: row;
+}
+
+nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #111111;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  background-color: #444;
+  color: #ccc;
+  width: 70%;
+  display: inline-block;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  position: relative;
+}
+
+h1 a {
+  font-size: 20px;
+}
+
+header img {
+  position: absolute;
+  right: 480px;
+  top: 71px;
+  display: inline-block;
+  height: 138px;
+  width: 253px;
+  margin-top: 2em;
+  padding-left: 18px;
+  padding-right: 17px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  background-color: #444;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+}
+main {
+  display: inline-block;
+}
+
+main img {
+  margin: auto;
+  display: block;
+}
+p {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+ul {
+  padding-left: 17px;
+  list-style: none;
+}

@@ -1,0 +1,61 @@
+/*
+Pesticide is a browser plugin that writes this one line of code for you.
+* { border: 1px solid lime; }
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+body {
+  background-color: #222;
+  margin: 0;
+  padding: 0;
+	font-family: 'Indie Flower', cursive;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: #ccc;
+  padding: 1em;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
+
+main img {
+	margin: auto;
+	display: block;
+}
+
+nav {
+  text-align: right;
+}
+
+nav a {
+  color: green;
+}
+
+h1 {
+  text-align: center;
+  background-color: #222;
+  color: #ccc;
+  padding: 1em;
+}
+
+main {
+  display: inline-block;
+  width: 75%;
+}
+
+aside {
+  display: inline-block;
+  width: 21%;
+  vertical-align: top;
+	background-color: #cc9;
+	padding: 1em;
+	border-radius: 0.5em;
+	box-shadow: 0px 0px 15px #222;
+}
+
+aside ul {
+	padding-left: 17px;
+}

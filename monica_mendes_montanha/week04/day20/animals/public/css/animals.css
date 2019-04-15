@@ -1,0 +1,21 @@
+body {
+  background-color: rgb(66, 33, 7);
+}
+
+.container {
+  color: burlywood;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.feature {
+  max-width: 100%;
+}
+
+nav {
+  text-align: right;
+}
+
+nav a {
+  color: white;
+}

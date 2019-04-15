@@ -1,0 +1,19 @@
+<h2><%= @animal["name"] %></h2>
+
+<% unless @animal.group.nil? %>
+  <h3>
+    Group:
+    <a href="/animals/<%= @animal.group.id %>">
+      <%= @animal.group.name %>
+    </a>
+  </h3>
+<% end %>
+
+<% unless @animal["image"].nil? %>
+  <img class="feature" src="<%= @animal["image"] %>" alt="<%= @animal["name"] %>">
+<% end %>
+
+<div class="controls">
+  <a href="/animals/<%= @animal["id"] %>/edit">Edit</a>
+  <a href="/animals/<%= @animal["id"] %>/delete">Delete</a>
+</div>

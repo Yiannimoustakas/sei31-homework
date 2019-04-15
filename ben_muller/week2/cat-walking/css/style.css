@@ -1,0 +1,37 @@
+body {
+  /* background-image: url("https://wallpapercave.com/wp/SAn3eTc.jpg");  */
+  background-image: url("/Users/benmuller/SEI/sei31-homework/ben_muller/week2/cat-walking/images/desert.jpg");
+}
+
+.walkingleft {
+  transition: transform 4s;
+  transform: scaleX(-1);
+}
+
+.rotating {
+  transition: transform 0.9s;
+  transform: rotate(1080deg);
+}
+
+.simba {
+  top: 260px;
+}
+
+.simbaleft {
+  top: 260px;
+  position: absolute;
+  height: 40%;
+}
+
+.fat {
+  position: absolute;
+  height: 30%;
+  z-index: -1
+}
+
+.fat-left {
+  position: absolute;
+  height: 30%;
+  transform: scaleX(-1);
+  z-index: -1
+}

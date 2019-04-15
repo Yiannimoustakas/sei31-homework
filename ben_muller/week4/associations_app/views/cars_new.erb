@@ -1,0 +1,36 @@
+<h2>Enter a new Car into the System</h2>
+
+<form method="post" action="/cars">
+  
+  <label>
+    Model:
+    <input type="text" name="model" value="" placeholder="Model">
+  </label>
+  
+  <label>
+    Year:
+    <input type="number" name="year" value="" placeholder="Year">
+  </label>
+  
+  <label>
+    Image:
+    <input type="text" name="image" value="" placeholder="http://...">
+  </label>
+  
+  <label>
+    Dealership:
+    <select class="" name="dealership_id">
+      <option value=""></option>
+      
+      <% @dealerships.each do |d|  %>
+      <option value="<%= d.id
+       %>"><%= d.brand %></option>
+       <% end %>
+    </select>
+  </label>
+  
+  
+  
+  <button>ADD NEW CAR</button>
+
+</form>

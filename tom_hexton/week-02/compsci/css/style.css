@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:200,400,700');
+
+* {
+	/* border: 1px solid green; */
+}
+
+html {
+	/* why won't this work for min-height? */
+	/* min-height: 100vh; */
+}
+
+body {
+	height: 1200px;
+	width: 100%;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+aside {
+	display: inline-block;
+	width: 14em;
+	height: 100%;
+	padding: 4em 2em 0;
+	background-color: #42444e;
+}
+
+aside:hover {
+	background-color: #202126;
+}
+
+h1 {
+	font-family: 'Roboto Mono', monospace;
+	font-size: 2.4em;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 1.5em;
+	color: white;
+}
+
+h2 {
+	font-family: 'Roboto Mono', monospace;
+	font-size: 2.4em;
+	font-weight: 400;
+	margin-top: 0;
+	margin-bottom: 1.5em;
+	text-transform: lowercase;
+	color: #42444e;
+}
+
+
+h4, p, li {
+	font-family: 'Roboto', sans-serif;
+	color: #42444e;
+}
+
+h4 {
+	font-size: 1.25em;
+	font-weight: 200;
+	margin-top: 0;
+	margin-bottom: 0.25em;
+	color: #9799a7;
+}
+
+h5 {
+	margin-top: 0;
+	margin-bottom: 0.25em;
+	color: #42444e;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+nav ul li:hover a {
+	color: #9799a7;
+}
+
+nav ul {
+	margin: 0;
+	list-style-type: none;
+	padding-inline-start: 0;
+}
+
+nav ul li p {
+	font-size: 0.875em;
+	font-weight: 200;
+	margin: 0 0 0.25em;
+	color: #9799a7;
+}
+
+nav ul li {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.125em;
+	margin-bottom: 2em;
+}
+
+main p, main ol li {
+	font-size: 0.9375em;
+	font-weight: 200;
+	line-height: 1.75;
+	margin-top: 0;
+	letter-spacing: 0.33px;
+	color: #9799a7;
+}
+
+main ol li {
+	margin-bottom: 1.5em;
+}
+
+/* -------------------------------------------------------------------------- */
+
+.container {
+	position: absolute;
+	top: 0;
+	left: 18em;
+	display: inline-block;
+	width: 38em;
+	/* height: 100%; */
+}
+
+main {
+	/* height: 100%; */
+	padding: 4em 3em 0;
+}
+
+main ol {
+	margin-top: 0;
+}

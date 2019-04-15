@@ -1,0 +1,9 @@
+<h2>The <%= @weapon["name"] %></h2>
+<h3> Cost: <em><%= @weapon["cost"] %></em></h3><h3> Weight: <em><%= @weapon["weight"] %></em></h3>
+<p> Damage: <%= @weapon["damage"] + " " + @weapon["damageType"] %></p>
+<h3> Properties: <em><%= @weapon["properties"] %></em></h3>
+
+<div class="">
+  <a href="/<%= @weapon['id'] %>/edit">Edit</a>
+  <a href="/<%= @weapon['id'] %>/delete">Delete</a>
+</div>

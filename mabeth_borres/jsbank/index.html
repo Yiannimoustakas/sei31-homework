@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- Homework by Mabeth Borres WDI March 2019 -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mabeth's Homework</title>
+  </head>
+  <body>
+
+<h2 class="gamepage"> JavaScript Bank </h2>
+
+
+	<p>
+	Please see code in action >> <a href="https://mmborres.github.io/homework/jsbank.html">https://mmborres.github.io/homework/jsbank.html</a>
+	</p>
+<div>
+		<p>New Account<br>
+		
+		Name: <input type="text" name="acctname" value="" id="acctname">
+		<br>Initial Deposit: <input type="text" name="initialdeposit" value="" id="initialdeposit">
+		<input type="button" value="Add Account" class="inputbutton" onclick="handleAddAccount()">
+	  </p>
+		<p id="addAccount"></p>
+</div>
+<div>
+		<p>Check Balance
+		<br>
+		Name: <select id="balanceAccountList"></select>
+		<br>Balance: <input type="text" name="balance" value="" id="balance" disabled="true">
+		
+		<input type="button" value="Show" class="inputbutton" onclick="handleBalance()">
+	  </p>
+		<p id="deposit"></p>
+</div>
+<div>
+		<p>Deposit Money
+		<br>
+		Name: <select id="depositAccountList"></select>
+		<br>Amount: <input type="text" name="depositamt" value="" id="depositamt">
+		<input type="button" value="Deposit" class="inputbutton" onclick="handleDeposit()">
+	  </p>
+		<p id="deposit"></p>
+</div>
+<!---
+Bank
+Account - name
+Initial deposit
+
+Deposit
+Dropdown, amount submit
+
+Withdraw
+Dropdo2n, amount submit
+
+Transfer
+Dropdwn from
+Dropdown to
+Amount
+
+Cannor be same acct, suggest deposit ir withdraw
+Value is index
+Text is name
+Add accct action repopulates all dropdown
+--->
+
+
+<div>
+		<p>Withdraw Money
+		<br>
+		Name: <select id="withdrawAccountList"></select>
+		<br>Amount: <input type="text" name="withdrawamt" value="" id="withdrawamt">
+		<input type="button" value="Withdraw" class="inputbutton" onclick="handleWithdraw()">
+	  </p>
+		<p id="withdraw"></p>
+</div>
+
+<div>
+		<p>Transfer Money
+		<br>
+		From: <select id="transferFROMAccountList"></select>
+		<br>
+		To: <select id="transferTOAccountList"></select>
+		<br>Amount: <input type="text" name="transferamt" value="" id="transferamt">
+		<input type="button" value="Transfer" class="inputbutton" onclick="handleTransfer()">
+	  </p>
+		<p id="transfer"></p>
+</div>
+
+<div>
+		<p>Check Bank Profit (Authorized Access Only)
+		<br>
+		<input type="button" value="Show" class="inputbutton" onclick="handleTotalSum()">
+		<input type="text" name="totsum" value="confidential info only" id="totsum" disabled="true">
+	  </p>
+		<p id="totsum"></p>
+
+</div>
+    <script src="jsbank.js"></script>
+  </body>
+</html>

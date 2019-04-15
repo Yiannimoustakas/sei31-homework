@@ -1,0 +1,113 @@
+ /* * {border: 1px solid lime;}   */
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+.container {
+  /* allows max width when smaller to have scroll bar  */
+  max-width: 960px; /*this is a common val good for mobile and desktop*/
+  margin: 0 auto;
+  background-color: rgb(189, 177, 190);
+  padding: 1.5em;
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+  box-shadow: 0 0 8px 8px white inset;
+  padding-bottom: 60px;
+}
+
+.nav-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+nav {
+  background-color: black;
+  padding: 3em;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+main h1 {
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
+
+.nav1 a {
+  text-decoration: none;
+  font-size: 1.25em;
+  margin-right: 2em;
+  color: lightblue;
+  position: relative;
+}
+
+.nav1 a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  border-bottom: 2px solid lightblue;
+  transition: 1s;
+}
+
+.nav1 a:hover:after {
+  width: 100%;
+}
+
+.fab, .fas {
+  color: lightblue;
+  margin-right: 2em;
+  padding: 0;
+}
+
+.fa-hand-point-right {
+  color: yellow;
+}
+
+.nav2 a i:hover {
+  color: pink;
+}
+
+.nav1 {
+  text-align: left;
+  display: inline-block;
+  width: 49%;
+}
+
+.nav2 {
+  text-align: right;
+  display: inline-block;
+  width: 50%;
+}
+
+.photos img {
+  width: 25%;  
+  margin: 2.3em;
+  transition: 5s;
+}
+
+.images1 img {
+  height: 10em;
+  text-align: center;
+  border-radius: 1.5em;
+  box-shadow: 10px 5px 5px grey;
+}
+
+.images2 img {
+  height: 20em;
+  text-align: center;
+  border-radius: 1.5em;
+  box-shadow: 10px 5px 5px grey;
+}
+
+
+
+
+

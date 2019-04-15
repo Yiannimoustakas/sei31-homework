@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat+Brush');
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
+@import url('https://fonts.googleapis.com/css?family=Irish+Grover');
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif|Raleway:400,500,600,700');
+
+body {
+  background-color: black;
+}
+
+  
+  h1 {
+    text-align: center;
+    background-color: #290505;
+    color: #ccc;
+    padding: 1em;
+    font-family: 'Luckiest Guy', cursive;
+  }
+    
+  div {
+      text-align: center;
+  }
+  
+  main {
+    display: inline-block;
+    text-align: center;
+  }
+  
+  main img {
+    display: inline block;
+    margin: auto;
+  }
+  
+  img {
+    border: 5px solid #290505;
+    border-radius: 4px;
+  }
+
+  label, p, h2 {
+    text-align: center;
+    background-color: #290505;
+    color: #ccc;
+    padding: 1em;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  button {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 1px;
+    background-color: #290505;
+    color: #ccc;
+    padding: 1em;
+  }
+
+  /** CLASSES **/
+
+.container {
+    text-align: center;
+    max-width: 960px; /* common value, responsive design */
+    margin: 0 auto;
+  
+    padding: 1em; /*space inside the box*/
+     /*space outside the box*/
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+  
+.pClass {
+    text-align: justify;
+}
+
+.h2title {
+    font-size: 30px;
+}

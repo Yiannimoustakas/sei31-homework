@@ -1,0 +1,138 @@
+* { 
+  border: 1px solid lime;
+  box-sizing: border-box;
+} 
+
+body {
+  overflow-x: hidden;
+}
+
+img { 
+  max-width: 100%; 
+}
+
+main {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.full-width {
+  width: 100vw;
+  position: relative;
+}
+
+h2 {
+  text-align: center;
+}
+
+p, img {
+  margin: 15px 0;
+}
+
+header {
+  position: relative;
+  height: 700px;
+  background-image: linear-gradient(#ff9d2f, #ff6126);
+}
+
+h1 {
+  padding: 100px 0;
+  font: 44px "Arial";
+  text-align: center;
+}
+
+header h1 {
+  color: white;
+}
+
+svg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10vw;
+  /* set height to pixels if you want angle to change with screen width */
+}
+
+nav {
+	width: 960px;
+	height: 100px;
+	margin: auto;
+	text-align: center;
+}
+.top-menu li {
+	display: inline-block;
+	text-align: center;
+	margin: 30px 5px;
+	position: relative;
+	-webkit-transition: all 0.3s ease; 
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+}
+.top-menu li:hover {
+	margin: 30px 20px; 
+}
+.top-menu li:active {
+	margin: 30px 33px; 
+}
+.top-menu li a  {
+	width: 100px;
+	height: 100px;
+	z-index: 9999;
+	position: absolute;
+	top: 35px;
+	font-weight: bold;
+	display: block;
+	text-decoration: none;
+	font-size: 20px;
+	color: #fff;
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.4), 0px 4px 6px rgba(0,0,0,0.1), 0px 9px 11px rgba(0,0,0,0.1);
+	-webkit-transition: all 0.1s linear; 
+	-moz-transition: all 0.1s linear;
+	-o-transition: all 0.1s linear;
+}
+.top-menu li:active a {
+	font-size: 26px;
+	top: 30px;
+	text-shadow: none;
+}
+.top-menu li div.menu-item {	
+	width: 100px;
+	height: 100px;
+	display: block;
+	-webkit-transition: all 0.2s ease; 
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	-webkit-border-top-left-radius: 100px; 
+	-webkit-border-bottom-right-radius: 100px; 
+	-moz-border-radius-topleft: 100px; 
+	-moz-border-radius-bottomright: 100px; 
+	border-top-left-radius: 100px; 
+	border-bottom-right-radius: 100px;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+}
+.top-menu li:hover div.menu-item{ 
+	-webkit-border-top-left-radius: 80px; 
+	-webkit-border-bottom-right-radius: 80px; 
+	-moz-border-radius-topleft: 80px; 
+	-moz-border-radius-bottomright: 80px; 
+	border-top-left-radius: 80px; 
+	border-bottom-right-radius: 80px; 
+		-webkit-transform: rotate(225deg);
+	-moz-transform: rotate(225deg);
+	-o-transform: rotate(225deg);
+}
+.top-menu li:active div.menu-item{ 
+	-webkit-border-top-left-radius: 50px; 
+	-webkit-border-bottom-right-radius: 50px; 
+	-moz-border-radius-topleft: 50px; 
+	-moz-border-radius-bottomright: 50px; 
+	border-top-left-radius: 50px; 
+	border-bottom-right-radius: 50px; 
+
+}
+#biography { background: #41D05F; }
+#trivia { background: #E42B2B; }
+#hometown { background: #ff8400; }

@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Roboto+Condensed:300,300,700&subset=latin-ext');
+/*
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+/
+
+/* {
+  border: 1px solid lime;
+}*/
+img{
+width: 60%;
+
+}
+.back{
+  border-radius: 300px;
+}
+
+
+nav {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  width: 260px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  text-decoration: none;
+  margin: 0 0 20px 30px;
+  position: fixed;
+}
+
+nav a {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 5px 0;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+
+.tilt{
+animation: rotation 10s infinite linear
+}
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
+.tiltO{
+  animation: rotation 10s infinite linear
+  }
+  @-webkit-keyframes rotation {
+  		from {
+  				-webkit-transform: rotate(0deg);
+  		}
+  		to {
+  				-webkit-transform: rotate(-359deg);
+  		}
+  }
+.expand{
+  animation: rotation 10s infinite linear
+  }
+  @-webkit-keyframes rotation {
+  		from {
+  				-webkit-transform: rotate(0deg);
+  		}
+  		to {
+  				-webkit-transform: rotate(359deg);
+  		}
+  }
+.pad{
+  animation: rotation 10s infinite linear
+  }
+  @-webkit-keyframes rotation {
+  		from {
+  				-webkit-transform: rotate(0deg);
+  		}
+  		to {
+  				-webkit-transform: rotate(-359deg);
+  		}
+  }
+
+.fa{
+  color: rgb(168, 255, 107);
+  transition: 40s;
+}
+.fa:hover{
+  transform: rotate(1060deg);
+  transition: .1s;
+}
+.sailor{
+  background-image: url("../img/sailor.jpg");
+}
+}
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Fjalla One', sans-serif;
+  text-transform: uppercase;
+  padding: 20px;
+  color: white;
+  letter-spacing: 10px;
+  font-size: 80px;
+  padding-left: 60px;
+  margin-left: 305px;
+  margin-top: 30px;
+  margin-bottom: 0;
+  margin-right: 15px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+h2{
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+p{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+}
+#container{
+background-color: grey;
+margin-left: 305px;
+font-weight: 700;
+margin-right: 15px;
+padding: 60px;
+margin-top: 15px;
+margin-bottom: 0;
+background-color: rgba(241, 241, 241, 0.8);
+}
+
+#l{
+  color: rgb(208, 208, 208);
+}
+#fanboy{
+  color: rgb(168, 255, 107);
+  font-weight: 900;
+  letter-spacing: 20px;
+}

@@ -1,0 +1,24 @@
+h1 {
+
+}
+
+
+nav {
+  background-color: black;
+  background-image: url("../images/shadow_slider.png");
+  color: white;
+  height: 60px
+}
+ nav a {
+   color: white;
+   font-family: sans-serif;
+   display: inline-block;
+   margin: 20px 1px 21px 1px;
+   padding: 0px 20px
+}
+
+
+.header {
+  margin-left: auto;
+  margin-right: auto;
+}

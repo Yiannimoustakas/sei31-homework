@@ -1,0 +1,30 @@
+<h2>Edit Hero</h2>
+
+<form action="/heros/<%= @hero["id"] %>" method="post">
+  <label>
+    Name:
+    <input type="text" name="name" value="<%= @hero["name"] %>" placeholder="Hero name" required autofocus>
+  </label>
+
+  <label>
+    Description:
+    <input type="text" name="description" value="<%= @hero["description"] %>" placeholder="Hero description name">
+  </label>
+
+  <label>
+    Image:
+    <input type="url" name="image" value="<%= @hero["image"] %>" placeholder="http://...">
+  </label>
+
+  <label>
+    Attribute:
+    <select name="archtype_id">
+      <option></option>
+      <% Archtype.all.each do |archtype| %>
+        <option value="<%= archtype.id %>" <%= "selected" if archtype.id == @hero.archtype_id %>><%= archtype.name %></option>
+      <% end %>
+    </select>
+  </label>
+
+  <button>Update Hero</button>
+</form>

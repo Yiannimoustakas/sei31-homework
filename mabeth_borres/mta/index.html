@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!-- Homework by Mabeth Borres WDI March 2019 -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mabeth's Homework</title>
+	
+	<style>
+	p {text-align:justify; font-size: 16px;}
+	div { 	margin-left: 150px;
+			/*margin-right: 100px;*/
+			padding: 0px; 
+	}	
+	
+	span.mta {
+	  display: inline; /* the default for span */
+	  width: 50px;
+	  height: 40px;
+	  padding: 5px;
+	  border: 2px solid blue;
+	  background-color: yellow;
+	  /*line-height: 50px;*/
+	  font-size: 14px;
+	  font-family: "Raleway", sans-serif;
+	  color: black;
+	  font-weight: bold;
+	}
+	
+	span.mtaline {
+	  display: inline; /* the default for span */
+	  width: 50px;
+	  height: 40px;
+	  padding: 5px;
+	  border: 2px solid blue;
+	  background-color: lightblue;
+	  /*line-height: 50px;*/
+	  font-size: 20px;
+	  font-family: "Raleway", sans-serif;
+	  color: black;
+	  font-weight: bold;
+	}
+	
+	</style>
+	
+  </head>
+  <body>
+    <h1>MTA - Week 1</h1>
+	
+	<p>
+	Please see code in action and displaying way better >> <a href="https://mmborres.github.io/homework/mta.html">https://mmborres.github.io/homework/mta.html</a>
+	</p>
+
+		<div><p>Welcome to NY Subway</p></div>
+		
+		<div>
+		<span class="mtaline">N</span>
+		<span class="mta">Times Square</span><span class="mta">34th</span>
+		<span class="mta">28th</span><span class="mta">23rd</span>
+		<span class="mta">Union Square</span><span class="mta">8th</span>
+		</div>
+		
+		<div>&nbsp;</div>
+				
+		<div>
+		<span class="mtaline">L</span>
+		<span class="mta">8th</span><span class="mta">6th</span>
+		<span class="mta">Union Square</span><span class="mta">3rd</span>
+		<span class="mta">1st</span>
+		</div>
+		
+		<div>&nbsp;</div>
+		
+		<div>
+		<span class="mtaline">6</span>
+		<span class="mta">Grand Central</span><span class="mta">33rd</span>
+		<span class="mta">28th</span><span class="mta">23rd</span>
+		<span class="mta">Union Square</span><span class="mta">Astor Place</span>
+		</div>
+		
+		<div>&nbsp;</div>
+		
+		<div><p>Plan Your Trip</p></div>
+		
+		<div><p>Select Starting Line: <select id="startLinesList" onchange="updateStartStations()"></select>&nbsp;&nbsp;&nbsp;Station: <select id="startLineStationsList"></select>
+		</p></div>
+		
+		<div><p>Select Destination Line: <select id="destLinesList" onchange="updateDestStations()"></select>&nbsp;&nbsp;&nbsp;Station: <select id="destLineStationsList"></select>
+		</p></div>
+		
+		<div><p><input type="button" value="View Itinerary" class="inputbutton" onclick="handlePlanTrip()">
+		</p></div>
+		
+		<div><p id="itinerarydisplay"></p></div>
+
+
+    <script src="mta.js"></script>
+  </body>
+</html>

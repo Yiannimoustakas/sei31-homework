@@ -1,0 +1,15 @@
+<h2>New Album</h2>
+
+<form action="/<%= @artist_id %>/album" method="post">
+  <label>
+    Name:
+   <input type="text" name="name" placeholder="Album Name" required autofocus>
+  </label>
+
+  <label>
+    Image:
+   <input type="url" name="image" placeholder="http://...">
+  </label>
+
+  <button>Create Album</button>
+</form>

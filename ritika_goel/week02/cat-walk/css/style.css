@@ -1,0 +1,7 @@
+.left-cat {
+  transform: rotateY(360deg);
+}
+
+.right-cat {
+  transform: rotateY(180deg);
+}

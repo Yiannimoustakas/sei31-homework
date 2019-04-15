@@ -1,0 +1,8 @@
+<h2>All Groups</h2>
+<% @groups.each do |group| %>
+  <p>
+    <a href="/groups/<%= group["id"] %>">
+      <%= group["name"]%>
+    </a>
+  </p>
+<% end %>

@@ -1,0 +1,12 @@
+<h2>
+  List of Dealerships
+</h2>
+
+<% @dealerships.each do |deal| %>
+
+  <p>
+    <a href="/dealerships/<%= deal.id %>"><%= deal.brand %></a>
+  </p>
+  
+
+<% end %>

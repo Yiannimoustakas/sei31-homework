@@ -1,0 +1,34 @@
+<h2><%= @album.name %></h2>
+
+<% unless @album.artist.nil? %>
+  <h3>Artist</h3>
+    <a href="/<%= @album.artist.id %>">
+      <%= @album.artist.name %>
+    </a>
+<% end  %>
+
+<% unless @album.image_url.nil? || @album.image_url.empty? %>
+  <img src="<%=  @album.image_url %>" alt="">
+<% end %>
+
+<% unless @album.songs.empty? %>
+  <h3>Songs</h3>
+<ul>
+  <% @album.songs.each do |song| %>
+  <li>
+    <a href="/song/<%= song.id %>">
+      <%= song.title %>
+    </a>
+  </li>
+  <% end %>
+</ul>
+<% end  %>
+
+<ul>
+  <li>
+    <button><a href="/album/<%= @album.id %>/edit">Edit</a></button>
+  </li>
+  <li><form action="/album/<%= @album.id %>/delete" method="post">
+    <button>Delete</button>
+  </form></li>
+</ul>

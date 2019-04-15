@@ -1,0 +1,32 @@
+cd <h2>Clothes Inventory Items</h2>
+
+<h3>Total Items: <%= @clothestotal %></h3>
+
+<% @clothesitems.each do |key, val| %>
+<h3><u><%= key.capitalize %></u></h3>
+<table>
+    <tr><td><b>Name</b></td><td><b>Subtype</b></td><td><b>Material</b></td><td><b>Size</b></td><td><b>Color</b></td></tr>
+<% val.each do |bf| %>
+    <tr>
+        <td>
+        <a href="/clothes/<%= bf["id"] %>">
+            <%= bf["name"] %>
+        </a>
+        </td>
+        <td>
+        <span class="tabitem"><%= bf["subtype"] %></span>
+        </td>
+        <td>
+        <span class="tabitem"><%= bf["material"] %></span>
+        </td>
+        <td>
+        <span class="tabitem"><%= bf["size"] %></span>
+        </td>
+        <td>
+        <span class="tabitem"><%= bf["color"] %></span>
+        </td>
+    </tr>
+<% end %>
+</table>
+<p><%= key.capitalize %> Total: <%= val.length %></p>
+<% end %>

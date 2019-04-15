@@ -1,0 +1,113 @@
+/* *{border: 1px solid lime;} */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+
+body {
+  background-image: url('../img/hero.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0.5em;
+  border-radius: 0 0 1em 1em;
+}
+
+nav {
+  text-align: right;
+  margin-top: 15px;
+}
+
+nav a {
+  color: grey;
+  font-size: 2em;
+  text-decoration: none;
+  padding: 0 1em;
+}
+
+nav a:hover {
+  color: rgb(207, 191, 129);
+}
+
+.borderRight {
+  border-right: 2px solid grey;
+}
+
+h1 {
+  text-align: center;
+  border-radius: 0.5em;
+  color: #ccc;
+  font-size: 5em;
+  text-shadow: 1px 1px 1px #000;
+  color: rgb(207, 191, 129);
+  font-family: 'Dancing Script', cursive;
+}
+
+main {
+  display: inline-block;
+  width: 75%;
+}
+
+main img {
+  margin: auto;
+  display: block;
+  border-radius: 0.3em;
+}
+
+aside {
+  display: inline-block;
+  width: 21%;
+  height: 669px;
+  vertical-align: top;
+  padding: 1em;
+  background-color: rgb(101, 102, 90);
+  border-radius: 0.3em;
+  color: white;
+}
+
+p {
+  color: white;
+  text-shadow: 1px 1px 1px #000;
+  text-align: justify;
+}
+
+section p {
+  font-size: 1.5em;
+}
+
+aside p {
+  text-align: left;
+}
+
+span {
+  color: rgb(207, 191, 129);
+}
+
+
+/* GoogleMaps Imported CSS */
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 700px;
+  width: 700px;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 700px;
+  width: 700px;
+}
+
+.smallImage{
+  width: 200px;
+  height:270px;
+  margin: 0 auto;
+}

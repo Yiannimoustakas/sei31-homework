@@ -1,0 +1,15 @@
+<h2>Edit Director</h2>
+
+<form action="/directors/<%= @director.id %>" method="post">
+  <label>
+    Name:
+    <input type="text" name="name" value="<%= @director.name %>" placeholder="Name of Director" required="required" autofocus="autofocus">
+  </label>
+
+  <label>
+    Image:
+    <input type="url" name="image" value="<%= @director.image %>" placeholder="http://..">
+  </label>
+
+  <button>Edit Director</button>
+</form>

@@ -1,0 +1,23 @@
+<h2>Clothing Types Available</h2>
+
+<p>
+<% i = 1 %>
+<% @clothestypes.each do |key| %>
+    <%= i %>. <%= key["type"] %>&nbsp;&nbsp;&nbsp;<a href="/clothes/types/<%= key["id"] %>/delete">Delete</a>
+    <% i += 1 %><br>
+<% end %>
+
+</p>
+
+<h2>Add Clothing Type</h2>
+<p>
+    <form action="/clothes/types/add" method="post" class="pLabel">
+        <label>
+        Type:
+        <input type="text" name="type" placeholder="Shirt" required autofocus>
+        </label>
+        <br><br>
+        <button>Add New Type</button>
+        <br>&nbsp;
+    </form>
+</p>

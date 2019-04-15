@@ -1,0 +1,56 @@
+<h2>Add Clothing Item to Inventory</h2>
+
+
+    <form action="/clothes" method="post" class="pLabel">
+        <label>
+        Name (Brand or Shop):
+        <input type="text" name="name" placeholder="Old Navy" required autofocus>
+        </label>
+        <br>
+        <label>
+        Type:
+        <!--input type="text" name="type" placeholder="Shirt"-->
+        
+        <select name="type" id="type">
+            <% i = 0 %>
+            <% @clothestypes.each do |key| %>
+            <option value=<%= key["type"] %> <% if i==0 %>selected<% end %>><%= key["type"] %></option>
+            <!--option value="Pants">Pants</option>
+            <option value="Jacket">Jacket</option>
+            <option value="Socks">Socks</option>
+            <option value="Bib">Bib</option-->
+            <% i += 1 %>
+            <% end %>
+        </select>
+        </label>
+        <br>
+        <label>
+        SubType:
+        <input type="text" name="subtype" placeholder="Tshirt">
+        </label>
+        <br>
+        <label>
+        Material:
+        <input type="text" name="material" placeholder="Cotton">
+        </label>
+        <br>
+        <label>
+        Size:
+        <input type="number" name="size" placeholder="3" min="1" max="14">
+        </label>
+        <br>
+        <label>
+        Color:
+        <input type="text" name="color" placeholder="Blue">
+        </label>
+        <br>
+        <label>
+        Image:
+        <input type="url" name="image" placeholder="http://...">
+        </label>
+        <br><br>
+        <button>Add New Item</button>
+        <br>&nbsp;
+    </form>
+
+    <p>&nbsp;</p>

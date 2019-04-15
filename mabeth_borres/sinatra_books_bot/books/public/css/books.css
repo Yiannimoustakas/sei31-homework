@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat+Brush');
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
+@import url('https://fonts.googleapis.com/css?family=Irish+Grover');
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif|Raleway:400,500,600,700');
+
+body {
+  /*https://media.giphy.com/media/d3MKb2hCZaNH63zq/giphy.gif*/
+  background-image: url("https://media.giphy.com/media/3osxYeLtSKwjXs8zU4/giphy.gif");
+  
+  /* Image is centered vertically and horizontally at all times */
+  background-position: top center;
+  
+  /* Image doesn't repeat */
+  background-repeat: no-repeat;
+  
+  /* Makes the image fixed in the viewport so that it doesn't move when 
+     the content height is greater than the image height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based on its container's size */
+  background-size: cover;
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 767px) {
+  body {
+    /* The file size of this background image is 93% smaller
+     * to improve page load speed on mobile internet connections */
+    background-image: url("../img/books.jpeg");
+  }
+}
+
+
+nav {
+    text-align: center;
+    font-weight: bold;
+    vertical-align: text-bottom;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #290505;
+    color: #ccc;
+    padding: 1em;
+  }
+  
+  nav a {
+    color: #ccc;
+    text-decoration: none;
+    vertical-align: text-bottom;
+  }
+  
+  h1 {
+    text-align: center;
+    background-color: #290505;
+    color: #ccc;
+    padding: 1em;
+    font-family: 'Luckiest Guy', cursive;
+  }
+    
+  div {
+      text-align: center;
+  }
+  
+  main {
+    display: inline-block;
+    text-align: center;
+  }
+  
+  main img {
+    display: inline block;
+    margin: auto;
+  }
+  
+  img {
+    border: 5px solid #290505;
+    border-radius: 4px;
+  }
+
+  label, p, h2 {
+    text-align: center;
+    background-color: #290505;
+    color: #ccc;
+    padding: 1em;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  button {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 1px;
+    background-color: #290505;
+    color: #ccc;
+    padding: 1em;
+  }
+
+  /** CLASSES **/
+
+.container {
+    text-align: center;
+    max-width: 960px; /* common value, responsive design */
+    margin: 0 auto;
+  
+    padding: 1em; /*space inside the box*/
+     /*space outside the box*/
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+  
+.pClass {
+    text-align: justify;
+}
+
+.h2title {
+    font-size: 30px;
+}

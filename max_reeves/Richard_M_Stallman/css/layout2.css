@@ -1,0 +1,122 @@
+/*
+Pesticide is a browser plugin that writes this one line of code for you.
+* { border: 1px solid lime; }
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Barrio');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+body {
+  background-color: #d7dde5;
+  margin: 0;
+  padding: 0;
+	font-family: 'Roboto Mono', cursive;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: ##5a6475;
+  padding: 1em;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
+
+.bounce {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.bounce:hover, .bounce:focus, .bounce:active {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+a:hover {
+	color: #922;
+}
+
+main img {
+	margin: auto;
+	display: block;
+	border-radius: 1em;
+	margin: 30px 0px 0px 0px;
+	width: 96%;
+	height: 60%;
+}
+
+nav {
+  text-align: center;
+	border-style: ridge;
+  border-top-left-radius: 1em;
+	border-bottom-right-radius: 1em;
+	position: relative;
+	margin: 20px 0px 0px 0px;
+	color: #922;
+	border-color: #922;
+	word-spacing: 9.8em;
+	padding: 10px;
+}
+
+nav a {
+  color: #222;
+	letter-spacing: 0.25em;
+	text-decoration: none;
+	font-family: 'Pinyon Script': cursive;
+}
+
+h1 {
+  text-align: center;
+  background-color: #922;
+  color: #ccc;
+  padding: 1em;
+	font-family: 'Barrio', cursive;
+	border-top-left-radius: 1em;
+	border-bottom-left-radius: 0em;
+	border-top-right-radius: 0em;
+	border-bottom-right-radius: 1em;
+	margin: auto;
+	width: 92.9%;
+}
+
+.title {
+	text-align: left;
+	line-height: 45px;
+}
+
+main {
+  display: inline-block;
+  width: 75%;
+}
+
+aside {
+  display: inline-block;
+  width: 20%;
+  vertical-align: top;
+	background-color: #922	;
+	color: #ccc;
+	padding: 32em 1em 1em 1em;
+	border-bottom-left-radius: 1em;
+	border-bottom-right-radius: 1em;
+	border-top-left-radius: 1em;
+	margin: 30px 0px 0px 0px;
+	text-align: left;
+}
+
+.video {
+	margin: 40px 0px 0px 0px;
+}
+
+.quote3 {
+	margin: 80px 0 50px -20px;
+}
+
+.quote {
+	margin: -500px 0 -50px 0;
+}

@@ -1,0 +1,20 @@
+<h2>Edit Hero</h2>
+
+<form action="/heroes/<%= @hero["id"] %>" method="post">
+  <label>
+    Hero name:
+    <input type="text" name="name" placeholder="Hero name" required autofocus>
+  </label>
+
+  <label>
+    Hero type:
+    <input type="text" name="type" placeholder="Strength, Agility, Intelligence">
+  </label>
+
+  <label>
+    Hero image:
+    <input type="text" name="image" placeholder="http://...">
+  </label>
+
+  <button id="edit">Update Hero</button>
+</form>

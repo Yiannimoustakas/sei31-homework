@@ -1,0 +1,31 @@
+<h1>Here is some info on your desired book</h1>
+<p id=title>
+  <strong>
+  <%= params[:book_name].capitalize %>
+  </strong>
+</p>
+
+<img src="<%= @bookimg %>">
+
+<p>
+  Author(s):
+  <%= @authors %>
+</p>
+
+<p>
+  Published Date:
+  <%= @date %>
+</p>
+
+<p>
+  Description:
+  <%= @description %>
+</p>
+
+<p>
+  Ratings:
+  <%= @rating %>
+  <span id=star>&#9733</span>;
+  Count:
+  <%= @rating_count %>
+</p>

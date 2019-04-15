@@ -1,0 +1,82 @@
+header {
+  border: solid 2px green;
+  background-color: black;
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-size: 20px;
+}
+
+:root {
+  --mainColor: #33ccff;
+}
+
+header nav a {
+  margin-right: 20px;
+  background:
+     linear-gradient(
+       to bottom, var(--mainColor) 0%,
+       var(--mainColor) 100%
+     );
+	background-position: 0 100%;
+	background-repeat: repeat-x;
+	background-size: 4px 4px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: background-size .2s;
+}
+
+header nav a:hover {
+  background-size: 4px 50px;
+}
+
+.socialMedia {
+  border: solid 2px brown;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.banner {
+  border: solid 2px blue;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.request {
+  /* border: solid 2px red; */
+  width: 80%;
+  margin: 0 auto;
+  border-style: inset;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.homebox {
+  border: solid 2px yellow;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  list-style-type: none;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  margin: 0 auto;
+  display: flex;
+}
+
+footer ul {
+  list-style-type: none;
+}

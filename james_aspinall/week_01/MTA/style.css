@@ -1,0 +1,24 @@
+body {
+  background-image: url(subway.jpg);
+  background-repeat: none;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  color: white;
+}
+
+#changeColor:hover {
+  color: #f4bc42;
+}
+
+.form-group input {
+  background-color: #e2e2e2;
+}
+
+.form-group select {
+  background-color: #e2e2e2;
+}

@@ -1,0 +1,47 @@
+/*
+
+## Style Hints:
+
+Body Font Size = 12px
+	 Line Height = 17px
+	 Font Family = "Times New Roman", serif
+	 Font Color = #656565
+
+Link Hover Color = #20222a
+
+*/
+
+/* h1 {
+  display: block;
+  font-size: 2em;
+  margin-top: 1.67em;
+  margin-bottom: 1.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+  justify-content: flex-start;
+} */
+
+p {
+
+}
+
+body {
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+#footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
+}
+#header {
+
+  margin-right: auto;
+  font-weight: bold;
+  justify-content: flex-start;
+}

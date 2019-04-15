@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- Homework by Mabeth Borres WDI March 2019 -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mabeth's Homework</title>
+  </head>
+  <body>
+    <h1>Calculator</h1>
+	
+	<p>
+	Please see code in action >> <a href="https://mmborres.github.io/homework/calculator.html">https://mmborres.github.io/homework/calculator.html</a>
+	</p>
+
+		<p>squareNumber()<br>
+		Write a function called squareNumber that will take one argument (a number), square that number,
+		and return the result. It should also log a string like "The result of squaring the number 3 is 9."</p>
+		<p>
+		Enter Value: <input type="text" name="sqValue" value="" id="sqValue">
+		<input type="button" value="Calculate" class="inputbutton" onclick="handleSquareNumber()">
+	  </p>
+		<p id="squareNumberOnly"></p>
+
+		<p>halfNumber()<br>
+		Write a function called halfNumber that will take one argument (a number),
+		divide it by 2, and return the result. It should also log a string like "Half of 5 is 2.5.".</p>
+		<p>
+		Enter Value: <input type="text" name="hValue" value="" id="hValue">
+		<input type="button" value="Calculate" class="inputbutton" onclick="handleHalfNumber()">
+	  </p>
+		<p id="halfNumberOnly"></p>
+
+		<p>percentOf()<br>
+		Write a function called percentOf that will take two numbers,
+		figure out what percent the first number represents of the second number,
+		and return the result. It should also log a string like "2 is 50% of 4."</p>
+		<p>
+		Enter Values: <input type="text" name="p1Value" value="" id="p1Value">&nbsp;<input type="text" name="p2Value" value="" id="p2Value">
+		<input type="button" value="Calculate" class="inputbutton" onclick="handlePercentOf()">
+	  </p>
+		<p id="percentOfOnly"></p>
+
+
+		<p>areaOfCircle()<br>
+			Write a function called areaOfCircle that will take one argument (the radius),
+			calculate the area based on that, and return the result.
+			It should also log a string like "The area for a circle with radius 2 is 12.566370614359172."
+			Bonus: Round the result so there are only two digits after the decimal. </p>
+			<p>
+			Enter Value: <input type="text" name="aValue" value="" id="aValue">
+			<input type="button" value="Calculate" class="inputbutton" onclick="handleAreaOfCircle()">
+		  </p>
+			<p id="areaOfCircleOnly"></p>
+
+
+
+    <p>superFunction()<br>
+      Write a function that will take one argument (a number) and perform the following operations,
+      using the functions you wrote earlier:
+      Take half of the number and store the result.
+      Square the result of #1 and store that result.
+      Calculate the area of a circle with the result of #2 as the radius.
+      Calculate what percentage that area is of the squared result (#3).
+		</p>
+
+		<p>
+		Enter Starting Value: <input type="text" name="startingValue" value="" id="startingValue">
+		<input type="button" value="Calculate" class="inputbutton" onclick="handleSuperFunction()">
+	  </p>
+
+		<p><b>RESULT</b></p>
+    <p id="intro"></p>
+    <p id="halfNumber"></p>
+    <p id="squareNumber"></p>
+    <p id="areaOfCircle"></p>
+    <p id="percentOf"></p>
+    <p id="superFunction"></p>
+
+
+    <script src="calculator.js"></script>
+  </body>
+</html>

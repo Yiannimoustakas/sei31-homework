@@ -1,0 +1,174 @@
+/** {
+  border: 1px solid red;
+}
+*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Share+Tech+Mono');
+
+
+body {
+  background-color: #001E25;
+  margin: 0;
+}
+
+h1 {
+  margin: 0px;
+}
+
+.margie {
+  color:#F3B906;
+  display: inline-block;
+  font-family: 'Share Tech Mono', monospace;
+  display: inline-block;
+  padding: 0.3em 0.3em 0.3em 0.5em;
+  text-align: left;
+  width: 60%
+}
+
+#picdiv{
+  padding: 0,
+  border-top-left-radius: 25px;
+  border-bottom-right-radius:25px;
+}
+
+
+a{
+  color:white;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  padding: 0px 10px 0px 10px
+}
+a:hover {
+  color: #F3B906
+}
+
+#mapo {
+  display: block;
+  margin: 15px 15px 15px 15px;
+}
+
+.location{
+  margin-top: 40;
+}
+
+#quote: {
+  color: #F3B906;
+  text-align: center;
+  margin-top: 140px;
+  padding: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+
+
+#mainpic {
+  position: absolute;
+  display: block;
+  top:160px;
+  bottom: 200px;
+  width:881px;
+
+}
+
+div h1 {
+  color: #F3B906;
+  text-align: center;
+  margin-top: 140px;
+  padding: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+
+#loc{
+  margin-top: 55px;
+}
+
+
+.nav {
+  display: inline-block;
+  margin-right: 0;
+  width: 34%;
+  text-align: right;
+  margin: 10px;
+}
+
+.container {
+  height: 1480px;
+  text-align:center;
+  width: 960px;
+  margin-left:  auto;
+  margin-right:  auto;
+  margin-top:120px;
+  background-color: #F0F1F4;
+  padding: 1em;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius:25px;
+}
+
+.box {
+  width:419px;
+  height:419px;
+  display:inline-block;
+  margin: 19px;
+  top: 100px;
+}
+
+container.#lego {
+  width:419px;
+  height:419px;
+  display:inline-block;
+  margin: 19px;
+  top: 100px;
+  text-align: left;
+  text-align: top;
+
+
+
+}
+
+
+.box .mapo{
+  margin: 0;
+  padding: 0;
+  width:881;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius:25px;
+}
+
+.peach {
+  background-color: #F3B906;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius:25px;
+}
+
+.peachlite {
+  background-color: #00475B;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius:25px;
+}
+
+.peachbig {
+  background-color: #00475B;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius:25px;
+  width: 881px;
+}
+
+
+
+header {
+  background-color: #00475B;
+  position: fixed;
+  width: 100%;
+  top:0px;
+  border-bottom: 5px solid #ECD01B;
+  z-index: 10;
+}
+
+.blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}

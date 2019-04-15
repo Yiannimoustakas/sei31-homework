@@ -1,0 +1,9 @@
+<h2>Heroes</h2>
+
+<% @dota.each do |hero| %>
+  <p>
+    <a href="/heroes/<%= hero["id"] %>">
+      <%= hero["name"] %>
+    </a>
+  </p>
+<% end %>

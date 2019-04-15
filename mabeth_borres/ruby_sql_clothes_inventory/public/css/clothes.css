@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif|Raleway:400,500,600,700');
+
+body {
+    background-image: url("../img/boys-clothes.jpg");
+    
+    /* Image is centered vertically and horizontally at all times */
+    background-position: center center;
+    
+    /* Image doesn't repeat */
+    background-repeat: no-repeat;
+    
+    /* Makes the image fixed in the viewport so that it doesn't move when 
+       the content height is greater than the image height */
+    background-attachment: fixed;
+    
+    /* This is what makes the background image rescale based on its container's size */
+    background-size: cover;
+
+    color: whitesmoke;
+
+    font-family: 'Raleway', sans-serif;
+  }
+
+  label {
+      color: #795548;
+      font-size: 20px;
+  }
+
+  nav a {
+      padding-left: 10px;
+      padding-right: 10px;
+  }
+
+  div a {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+  a {
+      color: #00bcd4;
+      text-decoration: none;
+      font-weight: bold;
+  }
+
+  img {
+      width: 400px;
+      height: 400px;
+
+      max-width: 100%;
+      border: 5px solid #00bcd4;
+  }
+
+  button {
+    background-color: #a55e2a;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    border-radius: 0.5em;
+  }
+
+  p {
+      text-align: center;
+  }
+
+  table {
+      align-content: center;
+      align-self: center;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+  }
+
+  .ptabitem {
+    padding-left: 200px;
+}
+
+  .tabitem {
+      padding-right: 10px;
+      padding-left: 10px;
+  }
+
+  .container {
+    text-align: center;
+    max-width: 960px; /* common value, responsive design */
+    margin: 0 auto;
+  
+    padding: 1em; /*space inside the box*/
+     /*space outside the box*/
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    background-color: #4e340bd6;
+}
+
+.pLabel {
+    background-color: #b2ebf2;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+}

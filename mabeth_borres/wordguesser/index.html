@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--  Homework by Mabeth Borres WDI March 2019 -->
+<html>
+<head>
+<style>
+p {
+		text-align:justify; font-size: 16px;
+	}
+
+	span.guessword {
+	  display: inline; /* the default for span */
+	  width: 100px;
+	  height: 100px;
+	  padding: 10px;
+	  border: 2px solid blue;
+	  background-color: lightblue;
+	  /*line-height: 50px;*/
+		font-size: 80px;
+	  color: lightblue;
+	}
+
+	span.answeredword {
+	  display: inline; /* the default for span */
+	  width: 100px;
+	  height: 100px;
+	  padding: 10px;
+	  border: 2px solid blue;
+	  background-color: lightblue;
+	  /*line-height: 50px;*/
+		font-size: 80px;
+	  color: black;
+	}
+
+</style>
+
+</head>
+<body>
+
+<h2 class="gamepage">6-Letter++ Word Guesser</h2>
+
+	<p>
+	Please see code in action >> <a href="https://mmborres.github.io/homework/wordguesser.html">https://mmborres.github.io/homework/wordguesser.html</a>
+	<br><br>
+	</p>
+
+<div id="gameboard"></div>
+
+<div id="answerportion">
+  <p>
+  <h2>Try a Letter?</h2><br>
+  <input type="text" name="guessValue" value="" id="guessValue" oninput="handleInputLetter()" maxlength="1">
+  </p>
+
+  <p id="hangmanparent"><img src="js/hm0.jpg" height="300" width="200" id="hangmanimage"></p>
+
+  <p>
+  <h2>Guess the Word?</h2><br>
+  <input type="text" name="guessWordValue" value="" id="guessWordValue">
+  <input type="button" value="Solve" class="inputbutton" onclick="handleInputWord()">
+  </p>
+</div>
+
+<div id="playagain"></div>
+
+<p>
+Rules:
+<br>Guess a Letter or guess the whole Word.
+<br>1 wrong Letter input = 1 wrong move.
+<br>1 wrong Word input = 2 wrong moves.
+<br>2 wrong moves = Hangman loses a body part.
+
+</p>
+
+  <script src="wordguesser.js"></script>
+  </body>
+</html>

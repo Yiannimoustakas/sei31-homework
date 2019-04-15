@@ -1,0 +1,20 @@
+<h2>Edit <%= @song.title %></h2>
+
+<form action="/song/<%= @song.id %>" method="post">
+  <label>
+    Title:
+   <input type="text" name="title" value="<%= @song.title %>" placeholder="Song Name" required autofocus>
+  </label>
+
+  <label>
+    Album:
+    <select name="album_id">
+      <option></option>
+      <% Album.all.each do |album| %>
+      <option value="<%= album.id %>" <%= "selected" if album.id == @song.album_id %>><%= album.name %></option>
+      <% end %>
+    </select>
+  </label>
+
+  <button>Edit Song</button>
+</form>

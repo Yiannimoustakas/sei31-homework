@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Jua');
+
+body {
+  /* border: 2px solid red; */
+  background-color: rgb(15, 65, 19);
+  font-family: 'Fredericka the Great', cursive;
+  /* background-image: url("/public/img/currency.jpg");
+  background-size: cover; */
+}
+
+.container {
+  /* border: 2px solid blue; */
+  max-width: 960px;
+  min-height: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  font-family: 'Fredericka the Great', cursive;
+  /* font-family: 'Jua', sans-serif; */
+  color: rgb(4, 46, 25);
+  font-size: 16px;
+  background-color: rgb(231, 248, 232);
+}
+
+h1 {
+  font-family: 'Fredericka the Great', cursive;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 70px;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-family: 'Fredericka the Great', cursive;
+  text-align: center;
+  font-size: 30px;
+  background-color: rgb(15, 65, 19);
+  color: rgb(231, 248, 232);
+  border: 2px solid rgb(57, 117, 62);
+  border-radius: 3px;
+  padding: 20px;
+  letter-spacing: 5px;
+
+}
+
+nav {
+  /* border: 2px solid yellow; */
+  text-align: right;
+  padding: 25px;
+  font-family: 'Jua', sans-serif;
+}
+
+nav a {
+  color: rgb(231, 248, 232);
+  border: 3px solid rgb(57, 117, 62);
+  border-radius: 3px;
+  padding: 5px;
+  background-color: rgb(15, 65, 19);;
+  margin-left: 15px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.list a {
+  color: black;
+}
+
+.controls a {
+  color:  rgb(22, 141, 32);
+  margin-left: 20px;
+  padding: 8px;
+  background-color: #fff;
+  border: 2px solid rgb(22, 141, 32);
+  border-radius: 3px;
+}
+
+.controls .delete {
+  color: rgb(209, 66, 66);
+  border: 2px solid rgb(209, 66, 66);
+}
+
+.title_list {
+  text-decoration: underline rgb(22, 141, 32);
+  margin-bottom: 70px;
+}
+
+.list {
+  /* border: 2px solid rgb(128, 0, 100); */
+  font-size: 25px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.list_names {
+  /* border: 2px solid orange; */
+  width: 200px;
+  margin-bottom: 20px;
+  padding-left: 100px;
+}
+
+form {
+  text-align: center;
+  padding: 33px;
+  font-size: 22px;
+}
+
+.controls {
+  text-align: right;
+}
+
+.img_currency {
+  /* border: 2px solid white; */
+  text-align: center;
+}
+
+img {
+  border: thick double black;
+  border-radius: 3px;
+  min-width: 500px;
+  min-height: 300px;
+  max-width: 600px;
+  max-height: 400px;
+}
+
+input {
+  color:rgb(22, 141, 32);
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+button {
+  border: 3px solid rgb(4, 46, 25);
+  border-radius: 3px;
+  background-color: rgb(22, 141, 32);
+  color: white;
+}
+
+.img_home {
+  text-align: center;
+}

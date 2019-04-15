@@ -1,0 +1,49 @@
+[1] pry(main)> require 'httparty'
+=> true
+[2] pry(main)> @title = 'Jaws'
+=> "Jaws"
+[3] pry(main)> url = "https://www.googleapis.com/books/v1/volumes?q=title:#{ @title }"
+=> "https://www.googleapis.com/books/v1/volumes?q=title:Jaws"
+[4] pry(main)> @info = HTTParty.get url;
+[5] pry(main)> @info["items"]
+=> [{"kind"=>"books#volume",
+  "id"=>"Xo5xSQAACAAJ",
+  "etag"=>"Y0T1wD35fGY",
+  "selfLink"=>"https://www.googleapis.com/books/v1/volumes/Xo5xSQAACAAJ",
+  "volumeInfo"=>
+   {"title"=>"Jaws. Per le Scuole superiori",
+    "authors"=>["Peter Benchley"],
+    "publisher"=>"Penguin Longman",
+    "publishedDate"=>"2008",
+    "description"=>
+     "Amity is a quiet town near New York. One night a woman goes for a swim in the sea. The next morning somebody finds her body on the beach. Brody is the Amity policeman. He thinks there's a killer shark out there. But the important people don't listen to him.",
+    "industryIdentifiers"=>
+     [{"type"=>"ISBN_10", "identifier"=>"1405878444"},
+      {"type"=>"ISBN_13", "identifier"=>"9781405878449"}],
+    "readingModes"=>{"text"=>false, "image"=>false},
+    "pageCount"=>40,
+    "printType"=>"BOOK",
+    "categories"=>["English language"],
+    "averageRating"=>3.5,
+    "ratingsCount"=>71,
+    "maturityRating"=>"NOT_MATURE",
+    "allowAnonLogging"=>false,
+    "contentVersion"=>"preview-1.0.0",
+    "imageLinks"=>
+     {"smallThumbnail"=>
+       "http://books.google.com/books/content?id=Xo5xSQAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+      "thumbnail"=>
+       "http://books.google.com/books/content?id=Xo5xSQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"},
+    "language"=>"en",
+    "previewLink"=>
+     "http://books.google.com.au/books?id=Xo5xSQAACAAJ&dq=title:Jaws&hl=&cd=1&source=gbs_api",
+    "infoLink"=>
+     "http://books.google.com.au/books?id=Xo5xSQAACAAJ&dq=title:Jaws&hl=&source=gbs_api",
+[6] pry(main)> @info["items"][0]["volumeinfo"]["imageLinks"]["thumbnail"]
+NoMethodError: undefined method `[]' for nil:NilClass
+from (pry):6:in `__pry__'
+[7] pry(main)> @info["items"][0]["VolumeInfo"]["imageLinks"]["thumbnail"]
+NoMethodError: undefined method `[]' for nil:NilClass
+from (pry):7:in `__pry__'
+[8] pry(main)> @info["items"][0]["volumeInfo"]["imageLinks"]["thumbnail"]
+=> "http://books.google.com/books/content?id=Xo5xSQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"

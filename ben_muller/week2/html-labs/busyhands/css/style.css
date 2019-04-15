@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  background: linear-gradient(#d4d2d2 50%, #e6eeee 50%);
+}
+
+.container {
+  display: flex;
+}
+
+
+nav {
+  background-color: black;
+  height: 97px;
+}
+
+nav ul {
+  margin-left: 150px;
+  margin-top: 0;
+}
+
+nav ul li {
+  text-align: center;
+  display: inline-block;
+  padding-top: 46px;
+  width: 90px;
+  text-decoration: none;
+  border-top: solid 6px black;
+  }
+
+nav ul li a {
+  padding-top: 20px;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  list-style: none;
+  text-decoration: none;
+  position: relative;
+}
+
+nav ul li:hover {
+  border-top: solid 6px rgb(44, 149, 246);
+  background-image: linear-gradient(rgb(10, 61, 108),black);
+  
+}
+.main-pic img {
+  display: flex;
+  margin-top: 0px;
+  margin-left: 150px;  
+  box-shadow: 22px 18px 36px grey;
+}
+
+.icons .logo {
+  position: absolute;
+  margin-top: 19px;
+}
+
+.icons {
+  display: flex;
+  margin-left: 150px;
+}
+
+.social {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  background-image: url('/Users/benmuller/SEI/sei31-homework/ben_muller/week2/html-labs/busyhands/images/socialNav.png');
+  margin-right: 10px;
+  position: relative;
+}
+
+.socials {
+  margin-top: 17px;
+}
+
+/* Social Nav Image Sprites */
+#linkedIn {
+  margin-left: 666px;
+  background-position: 0 -60px;
+}
+
+#twitter {
+  background-position: -57px -60px;
+}
+
+#facebook {
+  background-position: -117px -60px;
+}
+
+#css {
+  background-position: -174px -60px;
+}
+
+#linkedIn:hover {
+  background-position: 0 0;
+}
+
+#twitter:hover {
+  background-position: -57px 0px;
+}
+
+#facebook:hover {
+  background-position: -117px 0px;
+}
+
+#css:hover {
+  background-position: -174px   0px;
+}
+.quote {
+  display: flex;
+  margin-left: 150px;
+  margin-top: 30px;
+  border: inset 2px rgb(222, 222, 222);
+  padding: 9px;
+  justify-content: space-between;
+  margin-right: 313px;
+}
+
+.homeboxes {
+  display: flex;
+  margin-top: 40px;
+  margin-left: 150px;
+  margin-right: 313px;
+}
+
+.homeboxes img {
+  border: solid 5px rgb(222, 222, 222);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.homeboxes h3 {
+  display: inline;
+  padding-bottom: 4px;
+}
+
+.homeboxes p {
+  line-height: 23px;
+}
+
+
+
+
+

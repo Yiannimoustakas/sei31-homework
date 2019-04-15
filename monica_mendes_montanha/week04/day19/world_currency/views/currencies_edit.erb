@@ -1,0 +1,17 @@
+<h2>Edit Currencies</h2>
+
+<form action="/currencies/<%= @currencies["id"] %>" method="post">
+  <label>
+    Country:
+    <input type="text" name="country" value="<%= @currencies["country"] %>" placeholder="Country" required autofocus>
+  </label>
+  <label>
+    Currency:
+    <input type="text" name="name" value="<%= @currencies["name"] %>" placeholder="Currency name">
+  </label>
+  <label>
+    Image:
+    <input type="url" name="image" value="<%= @currencies["image"] %>" placeholder="http://...">
+  </label>
+  <button>Update currency!</button>
+</form>

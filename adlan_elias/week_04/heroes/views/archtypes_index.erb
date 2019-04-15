@@ -1,0 +1,9 @@
+<h2>All Attributes</h2>
+
+<% @archtypes.each do |archtype| %>
+  <p>
+    <a href="/archtypes/<%= archtype.id %>">
+      <%= archtype.name %>
+    </a>
+  </p>
+<% end %>

@@ -1,0 +1,60 @@
+body {
+  background-color: burlywood;
+  font-size: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* if I want add the image to background-image, better way is download the image for the folder  */
+  /* https://media.giphy.com/media/3o8dFzIXb0qaE3pYWs/giphy.gif */
+}
+
+nav {
+  text-align: left;
+  font-size: 20px;
+  margin: 35px 55px 35px 55px;
+}
+
+nav a {
+  color: burlywood;
+  background-color:  black;
+  padding: 15px;
+  border-radius: 3px;
+
+}
+
+form {
+  width: 50%;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+input {
+  font-size: 20px;
+  border-radius: 3px;
+  color: burlywood;
+}
+
+button {
+  font-size: 20px;
+  background-color: #fff;
+  color: black;
+  border: 2px solid black;
+  border-radius: 3px;
+}
+
+footer {
+  text-align: left;
+  font-size: 20px;
+}
+
+img {
+  border: 10px solid white;
+  border-radius: 3px;
+}

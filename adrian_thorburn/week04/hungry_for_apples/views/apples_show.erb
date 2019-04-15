@@ -1,0 +1,13 @@
+<div class="info">
+<h2><u><%= @apples["name"] %></u></h2>
+<h3>Origin: <em><%= @apples["place_of_origin"] %></em></h3>
+<h4>Good for baking? <%= @apples["baking"] %></h4>
+<h4>Sweetness  <%= @apples["sweetness"] %> / 5</h4>
+<div class="controls">
+  <a href="/apples/<%= @apples["id"] %>/edit">Edit</a>
+  <a href="/apples/<%= @apples["id"] %>/delete">Delete</a>
+</div>
+</div>
+<% unless @apples["image"].nil? %>
+<img src="<%= @apples["image"] %>" class="feature" alt="<%= @apples["name"] %>">
+<% end %>

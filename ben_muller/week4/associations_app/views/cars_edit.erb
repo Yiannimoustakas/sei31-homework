@@ -1,0 +1,32 @@
+<h2>Edit Car</h2>
+
+<form method="post" action="/cars/<%= @car.id %>">
+  
+  <label>
+    Model:
+    <input type="text" name="model" value="<%= @car.model %>" placeholder="Model">
+  </label>
+  
+  <label>
+    Year:
+    <input type="number" name="year" value="<%= @car.year %>" placeholder="Year">
+  </label>
+  
+  <label>
+    Image:
+    <input type="text" name="image" value="<%= @car.image %>" placeholder="http://...">
+  </label>
+  
+  <label>
+    Dealership:
+    <select name="dealership_id">
+      <option></option>
+      <% @dealerships.each do |deal| %>
+      <option value="<%= deal.id %>" <%= "selected" if deal.id == @car.dealership_id %> > <%= deal.brand %></option>
+      <% end %>
+    </select>
+  </label>
+
+  <button>EDIT CAR</button>
+
+</form>

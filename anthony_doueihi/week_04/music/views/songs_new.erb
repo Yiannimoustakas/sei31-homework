@@ -1,0 +1,20 @@
+<h2>New Song</h2>
+
+<form action="/<%= @artist_id %>/song" method="post">
+  <label>
+    Title:
+   <input type="text" name="title" placeholder="Song Name" required autofocus>
+  </label>
+
+  <label>
+    Album:
+    <select name="album_id">
+      <option></option>
+      <% Album.all.each do |album| %>
+      <option value="<%= album.id %>"><%= album.name %></option>
+      <% end %>
+    </select>
+  </label>
+
+  <button>Create Song</button>
+</form>

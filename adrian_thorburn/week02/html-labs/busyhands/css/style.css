@@ -1,0 +1,60 @@
+body{
+  background-color: pink;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding-left: 75px;
+  overflow: hidden;
+  background-color: #333333;
+}
+li a:hover {
+  background-color: #111111;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.wrapper {
+  width: 1150px;
+  margin: 0 auto;
+  background-color: grey;
+}
+
+img {
+  padding-left: 75px;
+}
+
+.add {
+  display: flex;
+  flex-direction: row;
+  padding-right: 130px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.homeboxwrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-right: 130px;
+    padding-left: 10px;
+  }
+.homebox {
+  display: flex;
+  flex-direction: column;
+}
+
+h2, p {
+  padding-left: 75px;
+}

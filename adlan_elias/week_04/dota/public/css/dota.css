@@ -1,0 +1,108 @@
+body {
+  background-color: grey;
+  font-family: 'Black Ops One', cursive;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  background-color:grey;
+  padding: 1em;
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+  box-shadow: 3px 15px 15px black;
+}
+
+h1, h2 {
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+span {
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 14px;
+}
+
+nav, .controls {
+  text-align: center;
+  font-family: 'Black Ops One', cursive;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding:0.8em;
+  background-color: #b53b3b;
+  border-radius: 1em;
+  margin-right: 200px;
+  margin-left: 200px;
+  color: white;
+}
+
+nav a, .controls a {
+  color: #000000;
+  text-decoration: none;
+  margin-right: 30px;
+  padding: 0.5em;
+  border-radius: 1em;
+  color: white;
+}
+
+nav a:hover, .controls a:hover  {
+  transition: 0.5s all;
+  background-color: black;
+  background-blend-mode: lighten;
+  padding: 0.5em;
+  border-radius: 1em;
+  color: white;
+}
+
+button {
+  margin: .3em;
+  border-radius: 1em;
+  color: black;
+  font-style: 'Black Ops One', cursive;
+  text-transform: uppercase;
+  font-size: 12px;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+button:hover {
+  transition: 1s all;
+  transform: scale(1.5);
+  background-color: red;
+  color: black;
+}
+
+.controls {
+  margin: 0 auto;
+
+}
+
+label {
+  margin: 0 auto;
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#new {
+  display: block;
+  width: 10%;
+  margin-top: 5%;
+  margin-left: 45%;
+  align-items: center;
+}
+
+#edit {
+  display: block;
+  width: 15%;
+  margin-top: 5%;
+  margin-left: 45%;
+  align-items: center;
+}

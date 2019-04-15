@@ -1,0 +1,36 @@
+/*
+
+## Style Hints:
+
+Body Font Size = 12px
+	 Line Height = 17px
+	 Font Family = "Times New Roman", serif
+	 Font Color = #656565
+
+Link Hover Color = #20222a
+
+*/
+
+header {
+  margin-left: 40px;
+}
+body {
+  font-size: 12px;
+  line-height: 17px;
+  font-family: "Times New Roman", serif;
+  font-color: #656565;
+  margin-left: 40px;
+}
+
+a {
+hover: #20222a;
+}
+div {
+  margin-left: 40px; /*在这里，试图使用 .bigpicture作为sector，没有效果，是否class定义有问题。*/
+}
+footer {
+  margin-left: 40px;
+  font-color: grey;
+}
+
+/*在设计背景颜色选项时出现问题，完全没有概念。还是在JS上出现问题，不清楚如何设置功能自动切换颜色。*/

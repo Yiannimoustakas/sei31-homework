@@ -1,0 +1,43 @@
+<h2>Edit Clothing Item</h2>
+
+<form action="/clothes/<%= @clothitem["id"] %>" method="post" class="pLabel">
+    <label>
+    Name (Brand or Shop):
+    <input type="text" name="name" value="<%= @clothitem["name"] %>" required autofocus>
+    </label>
+    <br>
+    <label>
+    Type: <%= @clothitem["type"] %>
+    </label>
+    <br>
+    <label>
+    SubType:
+    <input type="text" name="subtype" value="<%= @clothitem["subtype"] %>">
+    </label>
+    <br>
+    <label>
+    Material:
+    <input type="text" name="material" value="<%= @clothitem["material"] %>">
+    </label>
+     <br>
+    <label>
+    Size:
+    <input type="number" name="size" value="<%= @clothitem["size"] %>" min="1">
+    </label>
+   <br>
+    <label>
+    Color:
+    <input type="text" name="color" value="<%= @clothitem["color"] %>">
+    </label>
+    <br>
+    <label>
+    Image:
+    <input type="url" name="image" value="<%= @clothitem["image"] %>">
+    </label>
+    <br><br>
+    <button>Update Item</button>
+    <br>&nbsp;
+</form>
+
+
+    <p>&nbsp;</p>

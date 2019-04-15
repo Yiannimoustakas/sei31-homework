@@ -1,0 +1,23 @@
+<h2><%= @hero["name"] %></h2>
+
+<% unless @hero["image"].nil? %>
+  <img class="feature" src="<%= @hero["image"] %>" alt="<%= @hero["name"] %>">
+<% end %>
+
+<% unless @hero.archtype.nil? %>
+  <h3>
+    Attribute:
+    <a href="/archtypes/<%= @hero.archtype.id %>">
+      <%= @hero.archtype.name %>
+    </a>
+  </h3>
+<% end %>
+
+<h3>Description:</h3>
+<p><%= @hero["description"] %></p>
+
+
+<div class="controls">
+  <a href="/heros/<%= @hero["id"] %>/edit">Edit</a>
+  <a href="/heros/<%= @hero["id"] %>/delete">Delete</a>
+</div>

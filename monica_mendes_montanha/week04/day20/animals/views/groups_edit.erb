@@ -1,0 +1,10 @@
+<h2>Edit Group</h2>
+
+<form action="/groups/<%= @group.id %>" method="post">
+  <label>
+    Name:
+    <input type="text" name="name" value="<%= @group.name %>" placeholder="Group name" required autofocus>
+  </label>
+
+  <button>Update group</button>
+</form>

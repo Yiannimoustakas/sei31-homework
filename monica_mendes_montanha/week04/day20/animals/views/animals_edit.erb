@@ -1,0 +1,15 @@
+<h2>Edit Animal</h2>
+
+<form action="/animals/<%= @animal.id %>" method="post">
+  <label>
+    Name:
+    <input type="text" name="name" value="<%= @animal.name %>" placeholder="Animal name" required autofocus>
+  </label>
+
+  <label>
+    Image:
+    <input type="text" name="image" value="<%= @animal.image %>" placeholder="http://...">
+  </label>
+
+  <button>Update animal</button>
+</form>

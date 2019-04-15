@@ -1,0 +1,24 @@
+<h1>
+  Here is your Dealership</h1>
+
+<h3>
+  <%= @dealership.brand %></h3>
+
+<img src="<%= @dealership.logo %>" alt="">
+
+<% unless @dealership.cars.empty?  %>
+  <h5>
+    Cars Under Management
+  </h5>
+
+  <% @dealership.cars.each do |car|  %>
+
+    <p>
+      <a href="/cars/<%=  car.id %>"><%= car.model %></a>
+    </p>
+
+  <% end %>
+<% end %>
+
+<a href="/dealerships/<%= @dealership.id %>/edit">EDIT</a>
+<a href="/dealerships/<%= @dealership.id %>/delete">DELETE</a>

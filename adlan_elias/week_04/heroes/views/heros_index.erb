@@ -1,0 +1,9 @@
+<h2>All Heroes</h2>
+
+<% @heros.each do |hero| %>
+  <p>
+    <a id="hindex" href="/heros/<%= hero["id"] %>">
+      <%= hero["name"] %>
+    </a>
+  </p>
+<% end %>

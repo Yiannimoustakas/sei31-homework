@@ -1,0 +1,18 @@
+
+body{
+  
+  background-image: url(../img/subway.png);
+  background-repeat: no-repeat;
+  margin-top: 200px;
+  background-size: 100%;
+
+
+
+}
+h1 {
+  font-family: 'Varela Round', sans-serif;
+  font-weight: 900;
+  text-align: center;
+  margin-top: 50px;
+  text-transform: uppercase;
+}

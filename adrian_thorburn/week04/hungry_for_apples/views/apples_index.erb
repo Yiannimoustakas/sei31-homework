@@ -1,0 +1,8 @@
+<h2>Apple list</h2>
+  <% @apples.each do |apples| %>
+    <p>
+      <a href="/apples/<%= apples["id"] %>">
+      <%= apples["name"] %>
+      </a>
+    </p>
+  <% end %>

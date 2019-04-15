@@ -1,0 +1,19 @@
+<h1>
+  Edit Existing Dealership
+</h1>
+
+<form method="post" action="/dealerships/<%= @dealership.id %>">
+
+  <label>
+    Brand:
+    <input type="text" name="brand" value="<%= @dealership.brand %>">
+  </label>
+
+  <label>
+    Logo:
+    <input type="text" name="logo" value="<%= @dealership.logo %>">
+  </label>
+
+  <button>EDIT DEALERSHIP</button>
+
+</form>

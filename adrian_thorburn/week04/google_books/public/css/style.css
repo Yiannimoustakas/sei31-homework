@@ -1,0 +1,30 @@
+body{
+  background-color: teal;
+}
+.container {
+  width: 900px;
+  margin: 0 auto;
+  background-color: #ccc;
+}
+
+.bookContainer {
+  display: flex;
+  /* justify-content: space-around; */
+
+}
+
+h2 , h3 {
+  text-align: center;
+}
+
+img {
+  padding: 1em;
+  padding-top: 2em;
+  width: 382px;
+  height: 310px;
+}
+
+p {
+  padding: 1em;
+  width: 860px;
+}

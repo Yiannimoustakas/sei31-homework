@@ -1,0 +1,122 @@
+/* 
+
+## Style Hints: 
+
+Body Font Size = 12px
+	 Line Height = 17px
+	 Font Family = "Times New Roman", serif
+	 Font Color = #656565
+
+Link Hover Color = #20222a
+
+*/
+
+#container {
+	display: grid;
+  grid-template-columns: 25% auto 25%;
+	/* grid-template-rows: auto auto auto auto auto auto; */
+	
+	
+}
+
+.line0{grid-column: 2/3;}
+.line1{ grid-column: 2/3;}
+.line2{grid-column: 2/3;}
+.line3{grid-column: 2/3;}
+.line4{grid-column: 2/3;}
+.line5{grid-column: 2/3;}
+.line6{grid-column: 2/3;}
+.line7{grid-column: 2/3;}
+.line8{grid-column: 2/3;}
+.line9{grid-column: 2/3;}
+.line10{grid-column: 2/3;}
+
+img {
+	margin: 0;
+	
+	margin-bottom: 5px;
+	
+}
+
+.flex>img{
+	border: grey solid 5px;
+}
+
+.flex{
+	display :flex;
+	justify-content: space-between; 
+}
+
+
+/* ============================ */
+
+
+
+/* 
+.another {
+	grid-column: 2/3;
+	
+	position: relative;
+	display: block;
+	margin: auto;
+	height: 100px;
+}
+.a{ grid-column: 2/3;
+	width: 196.992px; 
+	display: block; 
+	position: absolute;
+	height: auto;
+	
+
+}
+
+img {
+	grid-column: 2/3; 
+	
+	
+   display: block;
+   height: 100%; 
+   
+	
+	margin-bottom: 10px;
+	
+
+}
+
+h2{ grid-column: 2/3;
+	
+	margin: auto;
+	text-align: center;
+
+}
+
+p { grid-column: 2/3;
+	
+
+	margin: auto;
+
+	
+}
+
+	
+
+.bottom {
+	grid-column: 2/3;
+	
+    display: flex;
+    justify-content: center;
+
+}
+
+.bottoms {
+	grid-column: 6;
+	position: absolute;
+	border: 5px solid grey;
+}
+
+footer {
+	grid-column: 7;
+	color: black;
+
+}
+  */

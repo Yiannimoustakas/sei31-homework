@@ -1,0 +1,16 @@
+body {
+  background-color: grey;
+  marin: 0;
+  padding: 0;
+}
+
+header {
+    text-align: center;
+}
+img {
+  width: 100%;
+  height: 100%;
+  bakground-size: cover;
+
+
+}

@@ -1,0 +1,30 @@
+
+body {
+	width: 950px;
+	margin: 0 auto; /*centers our container on the page */
+	font-size: 18px;
+	line-height: 20px;
+	font-family: "Times New Roman", serif;
+	color: #656565;
+	padding: 500;
+	
+}
+
+head {
+	padding-bottom: 200;
+}
+
+a {
+	text-decoration: none;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 2.5rem;            /* Footer height */
+}
+
+p {
+	float: right;
+}

@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css?family=Patrick+Hand|Permanent+Marker");
+
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+.parent-top-container {
+  /* border: solid 2px blue; */
+  width: 100%;
+}
+
+body {
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  font-family: "Permanent Marker", cursive;
+}
+
+nav {
+  text-align: right;
+  font-family: "Patrick Hand", cursive;
+  letter-spacing: 2px;
+  font-size: 28px;
+  background-color: #820c02;
+  padding: 16px;
+}
+
+:root {
+  --mainColor: #c96969;
+}
+
+nav a {
+  color: #ece5e5;
+  margin-right: 25px;
+  background:
+  linear-gradient(
+      to bottom,
+      #ece5e5,
+      #c96969
+    );
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 4px 4px;
+  transition: background-size .2s;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+nav a:hover {
+  color: #820c02;
+  background-size: 4px 50px;
+}
+
+a:hover {
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  /* border: solid 2px green; */
+  max-width: 960px;
+  min-height: 800px;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 3px;
+
+  background-color: #fff;
+  color: #000;
+  text-shadow:
+    0 1px #808d93,
+    -1px 0 #cdd2d5,
+    -1px 2px #808d93,
+    -2px 1px #cdd2d5,
+    -2px 3px #808d93,
+    -3px 2px #cdd2d5,
+    -3px 4px #808d93,
+    -4px 3px #cdd2d5,
+    -4px 5px #808d93,
+    -5px 4px #cdd2d5,
+    -5px 6px #808d93,
+    -6px 5px #cdd2d5,
+    -6px 7px #808d93,
+    -7px 6px #cdd2d5,
+    -7px 8px #808d93,
+    -8px 7px #cdd2d5;
+}
+
+h2,
+h3,
+h3 a,
+h4,
+.bio {
+  color: #820c02;
+}
+
+i {
+  color: #000;
+}
+
+.icon_book {
+  color: #c96969;
+}
+
+strong {
+  color: #c96969;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+main {
+  display: inline-block;
+  width: 53%;
+  text-align: center;
+}
+
+main p {
+  text-align: left;
+  font-family: "Patrick Hand", cursive;
+}
+
+main p a {
+  color: #820c02;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 17px;
+}
+
+li {
+  padding: 0.5em;
+}
+
+aside {
+  display: inline-block;
+  width: 40%;
+  text-align: justify;
+  font-family: "Patrick Hand", cursive;
+}
+
+aside a {
+  color: #820c02;
+}
+
+aside h3 {
+  color: #000000;
+  font-family: "Permanent Marker", cursive;
+}
+
+.books {
+  /* border: solid 2px orange; */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-family: "Patrick Hand", cursive;
+  text-align: left;
+}
+
+.books img {
+  width: 200px;
+  height: 250px;
+  border-radius: 2em;
+  border: 2px solid #820c02;
+  box-shadow: 0 0 10px #820c02;
+  margin-bottom: 15px;
+}
+
+.photo_bio {
+  width: 350px;
+  border-radius: 2em;
+  border: 2px solid #820c02;
+  box-shadow: 0 0 10px #820c02;
+}
+
+.photo_ruby {
+  width: 350px;
+  margin-bottom: 50px;
+}
+
+h4 {
+  font-family: "Permanent Marker", cursive;
+  font-size: 33px;
+}
+
+.twitter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.twitter img {
+  width: 26%;
+  height: 26%;
+  border-radius: 5em;
+}
+
+.data_post {
+  font-size: 14px;
+  color: rgb(156, 109, 109);
+}
+
+.matz-quotes-quote {
+  display: inline-block;
+  font-family: sans-serif;
+  margin: 1em;
+  max-width: 20em;
+}
+.matz-quotes-quote blockquote {
+  display: inline-block;
+  margin: 0;
+  padding: 1em;
+  position: relative;
+}
+.matz-quotes-quote blockquote:before {
+  color: #820c02;
+  content: "\201C";
+  font-size: 4em;
+  left: 0;
+  line-height: 0.75em;
+  position: absolute;
+  top: 0;
+  transform: scale(2, 8);
+  transform-origin: top;
+}
+.matz-quotes-quote blockquote:after {
+  color: #820c02;
+  content: "\201D";
+  font-size: 4em;
+  line-height: 0.75em;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: scale(2, 8);
+  transform-origin: top;
+}
+.matz-quotes-quote blockquote > * {
+  padding: 0 2em;
+}
+.matz-quotes-quote blockquote cite {
+  color: #820c02;
+  display: block;
+  font-style: normal;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+aside form {
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid #cdd2d5;
+  border-radius: 0.5em;
+  background-color: #e4e9ec;
+
+}
+
+#email {
+  border-radius: 0.5em;
+}
+
+#button {
+  color: #fff;
+ background-color: #c96969;
+ border-radius: 0.5em;
+}
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.5); }

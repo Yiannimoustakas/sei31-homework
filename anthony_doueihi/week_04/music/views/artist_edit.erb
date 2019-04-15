@@ -1,0 +1,15 @@
+<h2>Edit <%= @artist.name %></h2>
+
+<form action="/<%= @artist.id %>" method="post">
+  <label>
+    Name:
+   <input type="text" name="name" value="<%= @artist.name %>" placeholder="Butterfly Name" required autofocus>
+  </label>
+
+  <label>
+    Image:
+   <input type="url" name="image" value="<%= @artist.image_url %>" placeholder="http://...">
+  </label>
+
+  <button>Edit <%= @artist.name %></button>
+</form>

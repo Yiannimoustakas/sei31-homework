@@ -1,0 +1,8 @@
+<h1>Welcome To The NBA's Official 🐐 Team</h1>
+
+
+<div class="guards">
+  <% @players.each do |player|  %>
+<a href="/players/<%= player["id"] %>"><img src="<%= player["image"] %>" alt=""></a>
+ <% end  %>
+ </div>

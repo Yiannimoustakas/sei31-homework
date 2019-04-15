@@ -1,0 +1,24 @@
+<h2><%= @song.title %></h2>
+
+<% unless @song.artist.nil? %>
+  <h3>Artist</h3>
+    <a href="/<%= @song.artist.id %>">
+      <%= @song.artist.name %>
+    </a>
+<% end  %>
+
+<% unless @song.album.nil? %>
+  <h3>Albums</h3>
+    <a href="/album/<%= @song.album.id %>">
+      <%= @song.album.name %>
+    </a>
+<% end  %>
+
+<ul>
+  <li>
+    <button><a href="/song/<%= @song.id %>/edit">Edit</a></button>
+  </li>
+  <li><form action="/song/<%= @song.id %>/delete" method="post">
+    <button>Delete</button>
+  </form></li>
+</ul>

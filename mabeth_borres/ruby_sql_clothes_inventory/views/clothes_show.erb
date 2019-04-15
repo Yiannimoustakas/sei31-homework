@@ -1,0 +1,21 @@
+<h2>Clothing Item: <%= @clothitem["name"] %></h2>
+<h3>Type: <em><%= @clothitem["type"] %></em></h3>
+<h3>Subtype: <em><%= @clothitem["subtype"] %></em></h3>
+<h3>Material: <em><%= @clothitem["material"] %></em></h3>
+<h3>Size: <em><%= @clothitem["size"] %></em></h3>
+<h3>Color: <em><%= @clothitem["color"] %></em></h3>
+
+<% unless @clothitem["image"].nil? || @clothitem["image"].empty? %>
+    <img src="<%= @clothitem["image"] %>" alt="<%= @clothitem["name"] %>">
+<% end %>
+
+
+
+<div>
+<br>
+    <a href="/clothes/<%= @clothitem["id"] %>/edit">Edit Item</a>
+    <a href="/clothes/<%= @clothitem["id"] %>/delete">Delete Item</a>
+</div>
+
+
+    <p>&nbsp;</p>

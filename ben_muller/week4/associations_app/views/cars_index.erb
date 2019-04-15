@@ -1,0 +1,11 @@
+<h3> List of Cars Available </h3>
+
+
+<% @cars.each do |car| %>
+
+<p>
+  <a href="/cars/<%= car.id %>"> <%= car.dealership.brand %> <%= car.model %></a>
+</p>
+  <% end %>
+
+  

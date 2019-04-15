@@ -1,0 +1,42 @@
+
+
+body {
+ font-size: 12px;
+ line-height: 17px;
+ font-family: "Times New Roman", serif;
+ color: rgb(154, 157, 153);
+ margin: 46px 69px;
+}
+
+#container h1 {
+  font-size: 33px;
+}
+
+#container h6 {
+  color: rgb(64, 172, 218);
+  font-size: 12px;
+  margin: 0px auto;
+}
+/* Link Hover Color = #20222a */
+
+#container h4 {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+#container p {
+  margin-top: 0px;
+  font-size: 12px;
+  line-height: 1.6;
+  word-spacing: 2px;
+}
+
+.images-table img {
+  border: solid rgb(154, 157, 153) 3px;
+}
+
+#container p a:hover {
+    color: pink;
+}
+
+

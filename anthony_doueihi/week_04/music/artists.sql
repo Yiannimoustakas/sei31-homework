@@ -1,0 +1,8 @@
+CREATE TABLE artists(
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name TEXT,
+  image_url TEXT
+);
+
+
+INSERT INTO artists (name) VALUES ('BLACKPINK');

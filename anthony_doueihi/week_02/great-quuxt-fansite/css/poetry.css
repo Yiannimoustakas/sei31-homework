@@ -1,0 +1,19 @@
+main{
+  display: inline-block;
+  width: 70%;
+}
+
+aside{
+  position: fixed;
+  right: 17%;
+  top: 30%;
+  width: 15%;
+  background-color: #FFD4D1;
+  padding: 1em;
+  border-radius: 0.5em;
+  box-shadow: 0 0 15px #222;
+}
+
+p:focus{
+
+}

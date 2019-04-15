@@ -1,0 +1,86 @@
+/* *{
+  border: 1px solid green; to check all layout with green line. 
+
+  or 
+
+  Pesticide: is a browser plugin that write this one line of code for you
+} */
+
+/* 
+
+if anything look weired, look at the ralated features. 
+For example, if a container looked longer, look at the height property. 
+If position, look at the positioning, absolute, relative. 
+Each feature that affect the problems to be inspected. 
+*/
+
+*{
+  border: 1px solid green; 
+}
+
+@import url('https://fonts.googleapis.com/css?family=Cabin|Indie+Flower|Nunito+Sans');
+/* just add on CSS and works without touching index.html  */
+body  { 
+  background-color: #222;  /* #22 22 22, rr, gg, bb*/
+  margin: 0; 
+  padding: 0;
+}
+
+
+.container {
+  /* position: relative; */
+  max-width: 960px; 
+  margin: 0 auto; 
+  background-color: #ccc;
+  padding: 1em; /* use em rather than px. unit of character */
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+}
+
+
+
+nav {
+  text-align: right;
+}
+
+nav a{
+  color: green;
+}
+
+h1{
+  text-align: center;
+  background-color: #222;
+  color: #ccc;
+  padding: 1em; 
+}
+
+main {
+  display: inline-block;
+  width: 75%;
+}
+
+main img{
+  display: block;
+  margin: auto; 
+  /* margin:auto not work in this case it is inline. It just reserved
+  basic display type block from parent group */
+}
+
+aside { 
+  /* vertical alignment required */
+  /* position: absolute; */
+  display: inline-block;
+  vertical-align: top;
+  width: 22%;
+  background-color: #cfc;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  box-shadow: 0 0 15px #222;
+  right: 0;
+}
+
+aside ul{
+  padding-left:17px;
+  font-family: 'Nunito Sans', sans-serif;
+  /* second one is the fallback */
+}

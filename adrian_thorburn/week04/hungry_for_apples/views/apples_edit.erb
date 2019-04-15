@@ -1,0 +1,29 @@
+<h2>New Apple</h2>
+
+<form action="/apples/<%= @apple["id"] %>" method="post">
+  <label>
+    Name:
+    <input type="text" value="<%= @apple['name'] %>" name="name" placeholder="Apple name" required autofocus>
+  </label>
+
+  <label>
+    Place of Origin:
+    <input type="text" value="<%= @apple['place_of_origin'] %>" name="place_of_origin" placeholder="place of origin">
+  </label>
+
+  <label>
+    Baking:
+    <input type="text" value="<%= @apple['baking'] %>" name="baking" placeholder="how good for baking?">
+  </label>
+
+  <label>
+    Sweetness:
+    <input type="number" value="<%= @apple['sweetness'] %>" name="sweetness" placeholder="out of 5">
+  </label>
+
+  <label>
+    Image:
+    <input type="url" value="<%= @apple['image'] %>" name="image" placeholder="http://...">
+  </label>
+  <button>Edit Apple</button>
+</form>

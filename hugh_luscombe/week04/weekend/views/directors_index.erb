@@ -1,0 +1,9 @@
+<h2>All Directors</h2>
+
+<% @directors.each do |director| %>
+  <p>
+    <a href="/directors/<%= director.id %>">
+      <%= director.name %>
+    </a>
+  </p>
+<% end %>

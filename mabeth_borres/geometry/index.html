@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- Homework by Mabeth Borres WDI March 2019 -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mabeth's Homework</title>
+  </head>
+  <body>
+
+<h2 class="gamepage"> Geometry, Cash Register and Credit Card </h2>
+
+
+	<p>
+	Please see code in action >> <a href="https://mmborres.github.io/homework/geometry.html">https://mmborres.github.io/homework/geometry.html</a>
+	</p>
+	
+	<p>Rectangle: isSquare(), area(), perimeter()
+		<br>isSquare() - Returns whether the rectangle is a square or not
+		<br>area() - Returns the area of the rectangle
+		<br>perimeter() - Returns the perimeter of the rectangle</p>
+	<p>
+		Enter Sides: <input type="text" name="isSquareValue1" value="" id="isSquareValue1">&nbsp;<input type="text" name="isSquareValue2" value="" id="isSquareValue2">
+		<input type="button" value="Solve" class="inputbutton" onclick="handleIsSquare()">
+	</p>
+	<p id="isSquare"></p>
+	<p id="area"></p>
+	<p id="perimeter"></p>
+
+	
+	<p>Triangle: isEquilateral(), isIsosceles(), area(), isObtuse()
+		<br>isEquilateral() - Returns whether the triangle is equilateral or not
+		<br>isIsosceles() - Returns whether the triangle is isosceles or not
+		<br>area() - Returns the area of the Triangle
+		<br>isObtuse() - Returns whether the triangle is obtuse or not</p>
+	<p>
+		Enter Sides: <input type="text" name="triangleSide1" value="" id="triangleSide1">&nbsp;<input type="text" name="triangleSide2" value="" id="triangleSide2">&nbsp;<input type="text" name="triangleSide3" value="" id="triangleSide3">
+		<input type="button" value="Solve" class="inputbutton" onclick="handleTriangle()">
+	</p>
+	<p id="isEquilateral"></p>
+	<p id="isIsosceles"></p>
+	<p id="areaTriangle"></p>
+	<p id="isObtuse"></p>
+
+	<p>cashRegister()
+		<br>Write a function called cashRegister that takes a shopping cart object. 
+		The object contains item names and prices (itemName: itemPrice). 
+		The function should return the total price of the shopping cart. 
+		<br><br>
+		Cart Contents - change the prices 
+		<br>banana: <input type="text" name="banana" value="1.25" id="banana">
+		<br>handkerchief: <input type="text" name="handkerchief" value="0.99" id="handkerchief">
+		<br>tshirt: <input type="text" name="tshirt" value="25.01" id="tshirt">
+		<br>apple: <input type="text" name="apple" value="0.60" id="apple">
+		<br>nalgene: <input type="text" name="nalgene" value="10.34" id="nalgene">
+		<br>proteinShake: <input type="text" name="proteinShake" value="22.36" id="proteinShake">&nbsp;&nbsp;<input type="button" value="Total" class="inputbutton" onclick="handleCashRegister()">
+	</p>
+	<p id="cashRegister"></p>
+
+
+	<p>validateCreditCard()
+		<br>You're starting your own credit card business. 
+		You've come up with a new way to validate credit cards 
+		with a simple function called validateCreditCard that 
+		returns true or false.
+
+		<br><br>Here are the rules for a valid number:
+
+		<br>Number must be 16 digits, all of them must be numbers
+		<br>You must have at least two different digits represented (all of the digits cannot be the same)
+		<br>The final digit must be even
+		<br>The sum of all the digits must be greater than 16</p>
+	<p>
+		Enter Credit Card Number: <input type="text" name="creditCardValue" value="" id="creditCardValue">
+		<input type="button" value="Validate" class="inputbutton" onclick="handleValidateCreditCard()">
+		<input type="button" value="Check With Luhn Algorithm" class="inputbutton" onclick="handleLuhnAlgorithm()">
+	</p>
+
+	<p id="validateCreditCard"></p>
+	<p id="luhnAlgorithm"></p>
+
+    <script src="geometry.js"></script>
+  </body>
+</html>

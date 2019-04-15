@@ -1,0 +1,9 @@
+<h2>All Weapons</h2>
+
+<% @weapons.each do |weapon| %>
+  <p>
+    <a href="/<%= weapon["id"] %>">
+      <%= weapon["name"] %>
+    </a>
+  </p>
+<% end %>

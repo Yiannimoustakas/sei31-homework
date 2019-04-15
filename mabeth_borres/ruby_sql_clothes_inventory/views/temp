@@ -1,0 +1,174 @@
+<h2>Clothes Inventory Items</h2>
+
+<h3>Total Items: <%= @clothes.length %></h3>
+
+
+
+
+
+
+
+<h3><u>Shirts</u></h3>
+<table>
+    <tr>
+    <td><b>Name</b></td>
+    <td><b>Subtype</b></td>
+    <td><b>Material</b></td>
+    <td><b>Size</b></td>
+    <td><b>Color</b></td>
+    </tr>
+<% @shirt.each do |bf| %>
+    <tr>
+        <td>
+        <a href="/clothes/<%= bf["id"] %>">
+            <%= bf["name"] %>
+        </a>
+        </td>
+        <td>
+        <span class="tabitem"><%= bf["subtype"] %></span>
+        </td>
+        <td>
+        <span class="tabitem"><%= bf["material"] %></span>
+        </td>
+        <td>
+        <span class="tabitem"><%= bf["size"] %></span>
+        </td>
+        <td>
+        <span class="tabitem"><%= bf["color"] %></span>
+        </td>
+    </tr>
+<% end %>
+</table>
+<p>Shirts Total: <%= @shirt.length %></p>
+
+<h3><u>Pants</u></h3>
+<table>
+    <tr>
+    <td><b>Name</b></td>
+    <td><b>Subtype</b></td>
+    <td><b>Material</b></td>
+    <td><b>Size</b></td>
+    <td><b>Color</b></td>
+    </tr>
+<% @pants.each do |bf| %>
+    <tr>
+        <td>
+        <a href="/clothes/<%= bf["id"] %>">
+            <%= bf["name"] %>
+        </a>
+        </td>
+        <td>
+        <span class="tabitem"><%= bf["subtype"] %></span>
+        </td>
+        <td>
+        <span class="tabitem"><%= bf["material"] %></span>
+        </td>
+        <td>
+        <span class="tabitem"><%= bf["size"] %></span>
+        </td>
+        <td>
+        <span class="tabitem"><%= bf["color"] %></span>
+        </td>
+    </tr>
+<% end %>
+</table>
+<p>Pants Total: <%= @pants.length %></p>
+
+<h3><u>Jacket</u></h3>
+<table>
+    <tr>
+    <td><b>Name</b></td>
+    <td><b>Subtype</b></td>
+    <td><b>Material</b></td>
+    <td><b>Size</b></td>
+    <td><b>Color</b></td>
+    </tr>
+<% @jacket.each do |bf| %>
+    <tr>
+        <td>
+        <a href="/clothes/<%= bf["id"] %>">
+            <%= bf["name"] %>
+        </a>
+        </td>
+        <td>
+        <span class="tabitem"><%= bf["subtype"] %></span>
+        </td>
+        <td>
+        <span class="tabitem"><%= bf["material"] %></span>
+        </td>
+        <td>
+        <span class="tabitem"><%= bf["size"] %></span>
+        </td>
+        <td>
+        <span class="tabitem"><%= bf["color"] %></span>
+        </td>
+    </tr>
+<% end %>
+</table>
+<p>Jacket Total: <%= @jacket.length %></p>
+
+<h3><u>Socks</u></h3>
+<table>
+    <tr>
+    <td><b>Name</b></td>
+    <td><b>Subtype</b></td>
+    <td><b>Material</b></td>
+    <td><b>Size</b></td>
+    <td><b>Color</b></td>
+    </tr>
+<% @socks.each do |bf| %>
+    <tr>
+        <td>
+        <a href="/clothes/<%= bf["id"] %>">
+            <%= bf["name"] %>
+        </a>
+        </td>
+        <td>
+        <span class="tabitem"><%= bf["subtype"] %></span>
+        </td>
+        <td>
+        <span class="tabitem"><%= bf["material"] %></span>
+        </td>
+        <td>
+        <span class="tabitem"><%= bf["size"] %></span>
+        </td>
+        <td>
+        <span class="tabitem"><%= bf["color"] %></span>
+        </td>
+    </tr>
+<% end %>
+</table>
+<p>Socks Total: <%= @socks.length %></p>
+
+<h3><u>Bibs</u></h3>
+<table>
+    <tr>
+    <td><b>Name</b></td>
+    <td><b>Subtype</b></td>
+    <td><b>Material</b></td>
+    <td><b>Size</b></td>
+    <td><b>Color</b></td>
+    </tr>
+<% @bib.each do |bf| %>
+    <tr>
+        <td>
+        <a href="/clothes/<%= bf["id"] %>">
+            <%= bf["name"] %>
+        </a>
+        </td>
+        <td>
+        <span class="tabitem"><%= bf["subtype"] %></span>
+        </td>
+        <td>
+        <span class="tabitem"><%= bf["material"] %></span>
+        </td>
+        <td>
+        <span class="tabitem"><%= bf["size"] %></span>
+        </td>
+        <td>
+        <span class="tabitem"><%= bf["color"] %></span>
+        </td>
+    </tr>
+<% end %>
+</table>
+<p>Bibs Total: <%= @bib.length %></p>

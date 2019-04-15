@@ -1,0 +1,9 @@
+<h2>All Films</h2>
+
+<% @films.each do |film| %>
+  <p>
+    <a href="/films/<%= film["id"] %>">
+      <%= film["name"] %>
+    </a>
+  </p>
+<% end %>

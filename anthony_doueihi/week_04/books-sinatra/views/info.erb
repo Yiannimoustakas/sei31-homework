@@ -1,0 +1,9 @@
+<header>
+    <a href="/">Home</a>
+</header>
+<h1> <%= @book_title %> </h1>
+<h3> <%= @book_authors.join(", ") %> </h3>
+<img src="<%= @book_cover %>" alt="">
+<p>
+  <%= "#{ @book_description }"%>
+</p>

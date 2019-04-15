@@ -1,0 +1,7 @@
+<h2>Player List</h2>
+
+<% @players.each do |player|  %>
+<p>
+  <a href="/players/<%= player["id"]%>"><%= player["first_name"]%> <%= player["last_name"] %></a>
+</p>
+<% end %>

@@ -1,0 +1,67 @@
+/* this helps debug your page layout*/
+/* * {border: 1px solid lime;} */
+/* this helps debug your page layout*/
+
+/*font*/
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:400,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  background-color: #0CA9E8;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 960px; /*this is a standard width, good for most screens*/
+  margin: 0 auto;
+  background-color: #ccc;
+  padding: 2em;
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+}
+
+nav {
+  text-align: center;
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #333333;
+  display: flex;
+  flex-direction: row;
+}
+
+nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #111111;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  background-color: #0CA9E8;
+  color: black;
+  display: block;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  position: relative;
+}
+
+h1 a {
+  font-size: 20px;
+}
+
+h2 {
+  text-align: center;
+  
+}
+p {
+  font-family: 'Rajdhani', sans-serif;
+  text-align: center;
+}

@@ -1,0 +1,23 @@
+<h2><%= @archtype.name %></h2>
+
+<% unless @archtype.image.nil? || @archtype.image.empty? %>
+  <img id="archtype" src="<%= @archtype.image %>" alt="<%= @archtype.name %>">
+<% end %>
+
+<% unless @archtype.heros.empty? %>
+  <h3>Associated Heroes</h3>
+  <ul>
+    <% @archtype.heros.each do |hero| %>
+      <li>
+        <a href="/heros/<%= hero.id %>">
+          <%= hero.name %>
+        </a>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<div class="controls">
+  <a href="/archtypes/<%= @archtype.id %>/edit">Edit</a>
+  <a href="/archtypes/<%= @archtype.id %>/delete">Delete</a>
+</div>

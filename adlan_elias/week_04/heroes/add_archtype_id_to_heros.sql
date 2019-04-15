@@ -1,0 +1,1 @@
+ALTER TABLE heros ADD COLUMN archtype_id INTEGER;

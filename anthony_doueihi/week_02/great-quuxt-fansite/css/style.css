@@ -1,0 +1,66 @@
+* {
+  border: 1px solid red;
+}
+
+/*
+  #CC8964
+  #996040
+  #FFD4D1
+  #91FF9E
+  #9ECC93
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei');
+
+body{
+  background-color: grey;
+}
+
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: #9ECC93;
+    padding: 1em;
+    border-radius: 0 0 2em 2em;
+    box-shadow: 0 0 15px #222;
+}
+
+
+nav{
+  text-align: right;
+}
+
+nav a{
+  color: CC8964;
+}
+
+h1{
+  text-align: center;
+  padding: 1em;
+}
+
+main{
+
+}
+
+main img{
+  max-width: 960px;
+  display: block;
+  margin: 0 auto;
+}
+
+ul{
+  padding-left: 22px;
+}
+
+p{
+  font-family: 'Merriweather', serif;
+  color: black;
+}
+
+h1, h2, h3{
+  font-family: 'ZCOOL XiaoWei', serif;
+  color: #FFD4D1;
+}

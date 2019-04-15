@@ -1,0 +1,11 @@
+<h2><%= @currency["country"] %></h2>
+<h3> Currency: <em><%= @currency["name"] %></em> </h3>
+<div class="img_currency">
+  <% unless @currency["image"].nil? %>
+    <img class="feature" src="<%= @currency["image"]%>" alt="<%= @currency["name"]%>">
+  <% end %>
+</div>
+<div class="controls">
+  <a href="/currencies/<%= @currency["id"] %>/edit">Edit</a>
+  <a class="delete" href="/currencies/<%= @currency["id"] %>/delete">Delete</a>
+</div>

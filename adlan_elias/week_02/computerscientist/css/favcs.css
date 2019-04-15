@@ -1,0 +1,273 @@
+/*
+Handy way to see things
+Pesticide is a browser plugin that writes this one line of code for you
+
+* {border: 1px solid lime;}
+
+*/
+
+/*
+font-family: 'Mali', cursive;
+font-family: 'Black Ops One', cursive;
+*/
+
+body {
+  background-color: #b53b3b; /* #rrggbb #222222 ; #abc = #aabbcc ; black = #000 */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: black;
+  padding: 1em;
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+  box-shadow: 3px 15px 15px black;
+}
+
+nav {
+  text-align: center;
+  font-family: 'Black Ops One', cursive;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding:0.8em;
+  background-color: #b53b3b;
+  border-radius: 1em;
+  margin-right: 200px;
+  margin-left: 200px;
+  color: white;
+}
+
+nav a {
+  color: #000000;
+  text-decoration: none;
+  margin-right: 30px;
+  padding: 0.5em;
+  border-radius: 1em;
+  color: white;
+}
+
+nav a:hover {
+  transition: 0.5s all;
+  background-color: black;
+  background-blend-mode: lighten;
+  padding: 0.5em;
+  border-radius: 1em;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  background-color: ;
+  color: black;
+  padding: 1em;
+  font-family: 'Black Ops One', cursive;
+  text-transform: uppercase;
+  border-radius: 1em;
+  background-image: linear-gradient(to bottom, red, white, green);
+  box-shadow: 5px 5px 10px 5px black;
+}
+
+h1 a:visited {
+  color: black;
+}
+
+h2 {
+  text-align: left;
+  text-transform: uppercase;
+  margin-left: 50px;
+  font-family: 'Black Ops One', cursive;
+  color: white;
+  height: 40px;
+}
+
+h3 {
+  text-transform: uppercase;
+  text-align: left;
+  color: white;
+  font-weight: bold;
+  margin: 30px 0;
+}
+
+ul {
+  font-family: 'Mali', cursive;
+  letter-spacing: 1px;
+  width: 99%;
+}
+
+main {
+  display: inline-block;
+  width: 75%;
+  font-family: 'Calibri', sans-serif;
+  color: white;
+}
+
+aside {
+  display: inline-block;
+  width: 21%;
+  vertical-align: 450px;
+  background-color: #2cbb2c;
+  padding: 1em;
+  border-radius: 1em;
+  font-family: 'Times New Roman', sans-serif;
+}
+
+main img {
+  display: inline-block;
+  margin: 20px;
+  width: 25%;
+}
+
+.hydrogenbomb {
+  border-radius: 1em;
+  height: 200px;
+  width: 35%;
+}
+
+.portrait {
+  border-radius: 1em;
+  width: 25%;
+}
+
+.birthplacetext {
+  text-align: inherit;
+}
+
+.hungary {
+  border-radius: 1em;
+  margin-left: 120px;
+  margin-bottom: 80px;
+  height: 150px;
+  width: 250px;
+}
+
+.birthplace {
+  border-radius: 1em;
+  margin-left: 120px;
+}
+
+.deathbox {
+  width: 100%;
+  height: 300px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.deathbox img {
+  visibility: hidden;
+  height: 200px;
+  width: 200px;
+  border-radius: 1em;
+}
+
+.deathbox span {
+  visibility: hidden;
+}
+
+.deathbox:hover span {
+  transition: 2s all;
+  color: white;
+  visibility: visible;
+}
+
+.deathbox:hover img {
+  transition: 2s all;
+  visibility: visible;
+}
+
+.otherfacts {
+  width: 100%;
+  height: 300px;
+  border: 1px solid black;
+  text-align: left;
+  margin-top: 100px;
+}
+
+.quotes {
+  font-family: 'Black Ops One', cursive;
+  background-color: #b53b3b;
+  padding: 1em;
+  border-top-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  color: white;
+}
+
+.jvn {
+  font-family: 'Black Ops One', cursive;
+  text-align: right;
+  color: white;
+}
+
+.trivia {
+  margin-bottom: 0px;
+  height: 40px;
+}
+
+.computer {
+  margin-left: 40px;
+  width: 40%;
+}
+
+.math {
+  margin-left: 50px;
+  width: 40%;
+}
+
+.keepitclean {
+  font-family: 'Calibri', sans-serif;
+  font-size: 13px;
+  text-align: left;
+}
+
+.secondwife {
+  border-radius: 1em;
+  height: 100%;
+  margin-left: 90px;
+  width: 35%;
+}
+
+.daughter {
+  border-radius: 1em;
+  height: 100%;
+  width: 30%;
+  margin-left: 80px;
+}
+
+.eniac {
+  border-radius: 1em;
+  height: 100%;
+  width: 30%;
+  margin-left: 80px;
+}
+
+.eniac2 {
+  border-radius: 1em;
+  height: 100%;
+  width: 40%;
+  margin-left: 80px;
+}
+
+.theoryofgames {
+  border-radius: 1em;
+  height: 100%;
+  width: 35%;
+  margin-left: 80px;
+}
+
+.manhattan {
+  border-radius: 1em;
+  height: 100%;
+  width: 36%;
+  margin-left: 80px;
+}
+
+.automata {
+  text-decoration: none;
+  color: green;
+}
+
+.automata a:visited {
+  color: white;
+}

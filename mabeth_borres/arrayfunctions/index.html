@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!-- Homework by Mabeth Borres WDI March 2019 -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mabeth's Homework</title>
+  </head>
+  <body>
+
+<h2 class="gamepage"> Arrays and Functions </h2>
+
+	<p>
+	Please see code in action >> <a href="https://mmborres.github.io/homework/arrayfunctions.html">https://mmborres.github.io/homework/arrayfunctions.html</a>
+	</p>
+
+	<p>maxOfTwoNumbers()<br>
+		Define a function maxOfTwoNumbers that takes two numbers as arguments and
+		returns the largest of them. Use the if-then-else construct available in Javascript.
+		You'll have to remember your pre-work, or do some googling to figure this out.</p>
+	<p>
+		Enter Values: <input type="text" name="maxOfTwoNumbersValue1" value="" id="maxOfTwoNumbersValue1">&nbsp;<input type="text" name="maxOfTwoNumbersValue2" value="" id="maxOfTwoNumbersValue2">
+		<input type="button" value="Calculate" class="inputbutton" onclick="handleMaxOfTwoNumbers()">
+	</p>
+	<p id="maxOfTwoNumbers"></p>
+
+	<p>maxOfThree()<br>
+		Define a function maxOfThree that takes three numbers as arguments and
+		returns the largest of them.</p>
+	<p>
+		Enter Values: <br><input type="text" name="maxOfThreeValue1" value="" id="maxOfThreeValue1">&nbsp;<input type="text" name="maxOfThreeValue2" value="" id="maxOfThreeValue2">&nbsp;<input type="text" name="maxOfThreeValue3" value="" id="maxOfThreeValue3">
+		<input type="button" value="Calculate" class="inputbutton" onclick="handleMaxOfThree()">
+	</p>
+	<p id="maxOfThree"></p>
+
+	<p>isVowel()<br>
+		Write a function that takes a character (i.e. a string of length 1)
+		and returns true if it is a vowel, false otherwise.</p>
+	<p>
+		Enter 1 Character Value: <input type="text" name="isVowelValue" value="" id="isVowelValue" maxlength="1">
+		<input type="button" value="Solve" class="inputbutton" onclick="handleIsVowel()">
+	</p>
+	<p id="isVowel"></p>
+
+
+	<p>sumArray() and multiplyArray()<br>
+		Define a function sumArray and a function multiplyArray that sums and multiplies (respectively)
+		all the numbers in an array of numbers. 
+		<br><br>For example, sumArray([1,2,3,4]) should return 10,
+		and multiplyArray([1,2,3,4]) should return 24.</p>
+				
+	<p>Check as many numbers and select a button below to compute sum or product of the values. 
+		<div>
+			<input type="checkbox" id="value1" name="values" value="1">1<br>
+			<input type="checkbox" id="value2" name="values" value="2">2<br>
+			<input type="checkbox" id="value3" name="values" value="3" checked>3<br>
+			<input type="checkbox" id="value4" name="values" value="4">4<br>
+			<input type="checkbox" id="value5" name="values" value="5" checked>5<br>
+			<input type="checkbox" id="value6" name="values" value="6">6<br>
+			<input type="checkbox" id="value7" name="values" value="7">7<br>
+			<input type="checkbox" id="value8" name="values" value="8">8<br>
+			<input type="checkbox" id="value9" name="values" value="9">9<br>
+					
+			<input type="button" value="Sum of Values" class="inputbutton" onclick="handleSumArray()">
+			<input type="button" value="Product of Values" class="inputbutton" onclick="handleMultiplyArray()">
+		</div>
+	</p>
+	<p id="sumArray"></p>
+	<p id="multiplyArray"></p>
+
+
+	<p>reverseString()<br>
+		Define a function reverseString that computes the reversal of a string.
+		For example, reverseString("jag testar") should return the string "ratset gaj".</p>
+	<p>
+		Enter Value: <input type="text" name="reverseStringValue" value="" id="reverseStringValue">
+		<input type="button" value="Solve" class="inputbutton" onclick="handleReverseString()">
+	</p>
+	<p id="reverseString"></p>
+
+	<p>findLongestWord()<br>
+		Write a function findLongestWord that takes an array of words and
+		returns the length of the longest one.</p>
+	
+	<p>Check as many words to check which one is the longest word. <br>
+			
+		<input type="checkbox" id="longWordsvalue1" name="longWords" value="otorhinolaryngological">otorhinolaryngological<br>
+		<input type="checkbox" id="longWordsvalue2" name="longWords" value="immunoelectrophoretically ">immunoelectrophoretically <br>
+		<input type="checkbox" id="longWordsvalue3" name="longWords" value="acidity" checked>acidity<br>
+		<input type="checkbox" id="longWordsvalue4" name="longWords" value="radioimmunoelectrophoresis ">radioimmunoelectrophoresis <br>
+		<input type="checkbox" id="longWordsvalue5" name="longWords" value="spectrophotofluorometrically " checked>spectrophotofluorometrically <br>
+		<input type="checkbox" id="longWordsvalue6" name="longWords" value="operations " checked>operations <br>
+		<input type="checkbox" id="longWordsvalue7" name="longWords" value="expressions " checked>expressions <br>
+
+		<br>Add Own Values to the Array: <br>
+		<input type="text" name="findLongestWord" value="">
+		<input type="text" name="findLongestWord" value="">
+		<input type="text" name="findLongestWord" value="">
+		<input type="button" value="Find" class="inputbutton" onclick="handleFindLongestWord()">
+	</p>
+	<p id="findLongestWord"></p>
+			
+			
+	<p>filterLongWords()<br>
+		Write a function filterLongWords that takes an array of words and an number i
+		and returns the array of words that are longer than minimum length.</p>
+			
+		<p>Check as many words to filter.<br>
+	
+		<input type="checkbox" id="filterLongWords1" name="filterLongWords" value="otorhinolaryngological">otorhinolaryngological<br>
+		<input type="checkbox" id="filterLongWords2" name="filterLongWords" value="immunoelectrophoretically ">immunoelectrophoretically <br>
+		<input type="checkbox" id="filterLongWords3" name="filterLongWords" value="acidity" checked>acidity<br>
+		<input type="checkbox" id="filterLongWords4" name="filterLongWords" value="radioimmunoelectrophoresis ">radioimmunoelectrophoresis <br>
+		<input type="checkbox" id="filterLongWords5" name="filterLongWords" value="spectrophotofluorometrically " checked>spectrophotofluorometrically <br>
+		<input type="checkbox" id="filterLongWords6" name="filterLongWords" value="operations " checked>operations <br>
+		<input type="checkbox" id="filterLongWords7" name="filterLongWords" value="expressions " checked>expressions <br>
+		<input type="checkbox" id="filterLongWords8" name="filterLongWords" value="programs " checked>programs <br>
+		<input type="checkbox" id="filterLongWords9" name="filterLongWords" value="web " checked>web <br>
+				
+		<br>
+		Enter minimum length: <input type="text" name="filterMin" value="" id="filterMin">
+		<input type="button" value="Filter" class="inputbutton" onclick="handleFilterLongWords()">
+	</p>
+	<p id="filterLongWords"></p>
+
+    <script src="arrayfunctions.js"></script>
+  </body>
+</html>

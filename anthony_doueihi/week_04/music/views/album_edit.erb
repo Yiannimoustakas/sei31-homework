@@ -1,0 +1,15 @@
+<h2>Edit <%= @album.name %></h2>
+
+<form action="/album/<%= @album.id %>" method="post">
+  <label>
+    Name:
+   <input type="text" name="name" value="<%= @album.name %>" placeholder="Album Name" required autofocus>
+  </label>
+
+  <label>
+    Image:
+   <input type="url" name="image" value="<%= @album.image_url %>" placeholder="http://...">
+  </label>
+
+  <button>Edit Album</button>
+</form>

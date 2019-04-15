@@ -1,0 +1,23 @@
+<h1> Here is the car you want to see</h1>
+
+<ul>
+
+  <li>
+    <strong> Model: </strong> <%= @car.dealership.brand %> <%= @car.model %> 
+  </li>
+  
+  <li>
+    <strong> Year: </strong><%= @car.year %>
+  </li>
+  
+  <li>
+    
+    <strong> GO TO DEALER: </strong><a href="/dealerships/<%= @car.dealership.id %>"><%= @car.dealership.brand %></a>
+  </li>
+  
+</ul>
+
+<img src="<%= @car.image %>" alt="">
+
+<a href="/cars/<%= @car.id %>/edit">EDIT CAR</a>
+<a href="/cars/<%= @car.id %>/delete">DELETE CAR</a>

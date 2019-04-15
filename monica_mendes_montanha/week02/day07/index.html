@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/fansite.css" />
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous"
+  />
+    <title>Yukihiro Matsumoto</title>
+  </head>
+  <body>
+      <div class="parent-top-container">
+        <div class="top">
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="bio.html">Bio</a>
+          <a href="ruby.html">Ruby</a>
+        </nav>
+      </div>
+    <div class="container">
+      <header>
+        <h1>Yukihiro Matsumoto</h1>
+      </header>
+
+      <div class="content">
+        <main>
+          <h2>Written Works</h2>
+          <div class="books">
+            <img src="img/book_rubyInANutshell.jpg" alt="" />
+            <ul>
+              <li><i class="fas fa-book icon_book"></i> Ruby in a Nutshell</li>
+              <li><i class="fas fa-feather-alt icon_book"></i> by Yukihiro Matsumoto</li>
+              <li><i class="fas fa-arrow-circle-right icon_book"></i> November 2001</li>
+            </ul>
+          </div>
+          <div class="books">
+            <img src="img/book_theRubyProgrammingLanguage.jpg" alt="" />
+            <ul>
+              <li><i class="fas fa-book icon_book"></i> The Ruby Programming Language</li>
+              <li><i class="fas fa-feather-alt icon_book"></i> by David Flanagan, Yukihiro Matsumoto</li>
+              <li><i class="fas fa-arrow-circle-right icon_book"></i> January 2008</li>
+            </ul>
+          </div>
+        </main>
+        <aside>
+          <h3>
+            <a href="https://www.ruby-lang.org/en/news/" target="_blank"
+              >Ruby's Recent News</a
+            >
+          </h3>
+          <form class="mailing">
+              <label>MAILING LIST</label>
+              <input id="email" type="text" placeholder="Enter your e-mail here..." size="30">
+              <button id="button">subscribe</button>
+            </form>
+          <ul>
+            <li>
+              <p><div class="data_post">Posted by nagachika on 15 Mar 2019</div></p>
+              Ruby 2.5.5 Released Ruby 2.5.5 has been released.
+
+              <p><a
+                href="https://www.ruby-lang.org/en/news/2019/03/15/ruby-2-5-5-released/"
+                target="_blank"
+                >Continue Reading...</a
+              ></p>
+            </li>
+            <li>
+              <div class="data_post">Posted by naruse on 13 Mar 2019</div>
+              <p>Ruby 2.6.2 Released Ruby 2.6.2 has been released.</p>
+
+              <p>
+                <a
+                  href="https://www.ruby-lang.org/en/news/2019/03/13/ruby-2-6-2-released/"
+                  target="_blank"
+                  >Continue Reading...</a
+                >
+              </p>
+            </li>
+            <li>
+              <div class="data_post">Posted by nagachika on 13 Mar 2019</div>
+              <p>Ruby 2.5.4 Released Ruby 2.5.4 has been released.</p>
+
+              <p>
+                <a
+                  href="https://www.ruby-lang.org/en/news/2019/03/13/ruby-2-5-4-released/"
+                  target="_blank"
+                  >Continue Reading...</a
+                >
+              </p>
+            </li>
+            <li>
+              <div class="data_post">Posted by hsbt on 5 Mar 2019</div>
+              <p>Multiple vulnerabilities in RubyGems There are multiple
+              vulnerabilities in RubyGems bundled with Ruby. It is reported at
+              the official blog of RubyGems.</p>
+
+              <p><a
+                href="https://www.ruby-lang.org/en/news/2019/03/05/multiple-vulnerabilities-in-rubygems/"
+                target="_blank"
+                >Continue Reading...</a
+              ></p>
+            </li>
+          </ul>
+          <div class="twitter">
+            <img src="img/yukihirodesenho.jpeg" alt="" />
+            <h4>
+              <a href="https://twitter.com/yukihiro_matz" target="_blank"
+                >@yukihiro_matz</a
+              >
+            </h4>
+          </div>
+        </aside>
+      </div>
+    </div>
+    </div>
+    <script>
+      const button = document.getElementById('button');
+
+      const subscribe = function () {
+        const email = document.getElementById("email").value;
+        alert("Welcome aboard! We'll be in touch.");
+      };
+      button.addEventListener('click', subscribe);
+    </script>
+  </body>
+</html>

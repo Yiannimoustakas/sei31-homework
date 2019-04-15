@@ -1,0 +1,30 @@
+<h2>New Hero</h2>
+
+<form action="/heros" method="post">
+  <label>
+    Name:
+    <input type="text" name="name" placeholder="Hero name" required autofocus>
+  </label>
+
+  <label>
+    Description:
+    <input type="text" name="description" placeholder="Hero description">
+  </label>
+
+  <label>
+    Image:
+    <input type="url" name="image" placeholder="http://...">
+  </label>
+
+  <label>
+    Attribute:
+    <select name="archtype_id">
+      <option></option>
+      <% Archtype.all.each do |archtype| %>
+        <option value="<%= archtype.id %>"><%= archtype.name %></option>
+      <% end %>
+    </select>
+  </label>
+
+  <button>Create Hero</button>
+</form>

@@ -1,0 +1,19 @@
+<h1>Player Career Stats</h1>
+
+<p>
+  <h4>First Name: <%= @players["first_name"] %></h4>
+  <h4>Last Name: <%= @players["last_name"] %></h4>
+  <h4>Nickname: <%= @players["nickname"] %></h4>
+  <h4>Team: <%= @players["team"] %></h4>
+  <h4>Points Per Game: <%= @players["ppg"] %></h4>
+  <h4>Rebounds Per Game: <%= @players["rpg"] %></h4>
+  <h4>Assists Per Game: <%= @players["apg"] %></h4>
+  <h4>Games Played:  <%= @players["games"] %></h4>
+</p>
+<img src="<%= @players["image"] %>" alt="Player Image">
+  
+<div class="edit-del">
+  <a href="/players/ <%= @players["id"] %> /edit">Edit</a>
+  <a href="/players/ <%= @players["id"] %> /delete">Delete</a>
+</div>
+

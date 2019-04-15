@@ -1,0 +1,12 @@
+body {
+  background-color: black;
+}
+
+#words {
+  display: none;
+}
+
+.word {
+  display: none;
+  position: absolute;
+}
