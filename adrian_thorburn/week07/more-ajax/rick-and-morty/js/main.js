@@ -10,8 +10,10 @@ const showImages = function(results){
   })
 }
 
+page = 1
+
 const searchCharacters = function (char){
-  charURL = `https://rickandmortyapi.com/api/character?name=${char}`
+  charURL = `https://rickandmortyapi.com/api/character/?name=${char}`
   locations = "https://rickandmortyapi.com/api/location"
   episodes = "https://rickandmortyapi.com/api/episode"
 
@@ -19,11 +21,6 @@ const searchCharacters = function (char){
     console.log(data);
   })
 }
-
-
-
-
-
 
 
 $(document).ready(function () {

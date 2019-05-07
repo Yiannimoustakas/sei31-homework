@@ -16,14 +16,8 @@ const searchWeather = function(city){
     $('#min-temp').append(`Minimum Temperature: ${data.main.temp_min}`)
     $('#max-temp').append(`Maximum Temperature: ${data.main.temp_max}`)
     $('#humidity').append(`Humidity: ${data.main.humidity}`)
-
-
-//enough
-
   });
 }
-
-
 
 $(document).ready(function () {
   $('#search').on('submit', function (event) {
@@ -32,7 +26,7 @@ $(document).ready(function () {
     console.log(`searching for ${query}`);
     searchWeather(query);
   })
-});
+});f
 
 
 // var myDate = new Date( 1556650768 *1000);

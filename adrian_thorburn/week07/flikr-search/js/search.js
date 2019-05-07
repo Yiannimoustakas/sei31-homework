@@ -25,7 +25,7 @@ const showImages = function(results) {
     const photoOwner = photo.owner
 
     //build the direct URL and place inside <a> tag with picture
-    const $largeIMG = $('<a>', {href: `https://www.flickr.com/photos/${photoOwner}/${photoID}`, target: '_blank'})
+    const $largeIMG = $('<a>', {href: `https://www.flickr.com/photos/${photoOwner}/${photoID}`, target: '_blank', class: 'item'})
     //console.log($largeIMG);
     $largeIMG.appendTo('#images')
     $img.appendTo($largeIMG)
@@ -94,7 +94,7 @@ $(document).ready(function () {
     }
   }, 500));
 
-  $('<a>').hover(function(){
+  $('.item').hover(function(){
     console.log('hover');
   });
 
