@@ -1,0 +1,14 @@
+<h1>Our Proxy</h1>
+
+<script>
+  <!-- $.ajax("http://www.smh.com.au") -->
+
+  $.ajax("http://localhost:3000/fetch?url=http://www.bbciplayer.co.uk")
+  .done(response => {
+    console.log(response.data)
+  })
+  .fail(error => {
+    console.warn(error)
+  })
+
+</script>
