@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <% include partials/head.ejs %>
+  <body>
+    <h1>Look up the weather</h1>
+
+    <form action="/info">
+      <label>
+        Weather lookup:
+        <input type="text" name="symbol" placeholder="Auckland">
+      </label>
+      <input type="submit" value"GO">
+    </form>
+  </body>
+</html>
