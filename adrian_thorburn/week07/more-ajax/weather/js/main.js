@@ -26,7 +26,7 @@ $(document).ready(function () {
     console.log(`searching for ${query}`);
     searchWeather(query);
   })
-});f
+});
 
 
 // var myDate = new Date( 1556650768 *1000);
