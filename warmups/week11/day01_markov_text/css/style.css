@@ -1,0 +1,10 @@
+body {
+  text-align: center;
+  position: absolute;
+  margin-top: 30vh;
+  background-color: pink;
+}
+
+#output {
+  position: relative;
+}
