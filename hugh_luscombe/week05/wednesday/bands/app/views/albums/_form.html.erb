@@ -1,0 +1,11 @@
+<%= form_for @album do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title, :autofocus => true, :required => true %>
+  <%= f.label :year, "Year Released" %>
+  <%= f.text_field :year %>
+  <%= f.label :image, "Album Cover" %>
+  <%= f.url_field :image, :required => true %>
+  <%= f.label :band_id %>
+  <%= f.select :band_id, Band.pluck(:name, :id), :include_blank => true %>
+  <%= f.submit %>
+<% end %>
