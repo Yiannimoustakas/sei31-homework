@@ -1,0 +1,32 @@
+<h2>New Film</h2>
+
+<form action="/films" method="post">
+  <label>
+    Name:
+    <input type="text" name="name" placeholder="Name of Film" required="required" autofocus="autofocus">
+  </label>
+
+  <label>
+    Year:
+    <input type="number" name="year" placeholder="Name of Year">
+  </label>
+
+  <label>
+    Image:
+    <input type="url" name="image" placeholder="http://..">
+  </label>
+
+  <label for="">
+    Director:
+    <select name="director_id">
+      <option></option>
+      <% Director.all.each do |director| %>
+        <option value="<%= director.id %>">
+          <%= director.name %>
+        </option>
+      <% end %>
+    </select>
+  </label>
+
+  <button>Create Film</button>
+</form>

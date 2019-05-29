@@ -1,0 +1,13 @@
+.conatainer {
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: aliceblue;
+}
+
+.thumb {
+  max-height: 10em;
+}
+
+.feature {
+  max-width: 100%;
+}

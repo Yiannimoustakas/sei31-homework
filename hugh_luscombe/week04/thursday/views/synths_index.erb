@@ -1,0 +1,9 @@
+<h2>All Synthesisers</h2>
+
+<% @synths.each do |synth| %>
+  <p>
+    <a href="/synths/<%= synth["id"] %>">
+      <%= synth["name"] %>
+    </a>
+  </p>
+<% end %>
