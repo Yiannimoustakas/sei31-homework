@@ -105,3 +105,27 @@ const findSum = (array, sum) => {
 }
 
 console.log(findSum([3, 5, 1, 4], 9));
+
+// Anthony's solution
+
+const isSum = function( nums, sum ){
+
+  const recursiveSum = function( foo = 0, bar = 1 ){
+
+    if ( sum === nums[foo] + nums[bar]){
+      return true;
+    }
+
+    if ( foo === nums.length - 2 && bar === nums.length - 1){
+      return false;
+    }
+
+    if ( bar === nums.length - 1 ){
+      return recursiveSum(foo + 1, foo + 2)
+    }else {
+      return recursiveSum(foo, bar + 1);
+    }
+  }
+
+  return recursiveSum();
+}
