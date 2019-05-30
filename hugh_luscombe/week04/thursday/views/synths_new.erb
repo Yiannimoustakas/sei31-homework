@@ -1,0 +1,25 @@
+<h2>Add New Synthesiser</h2>
+
+<form class="form" action="/synths" method="post">
+  <label>
+    Brand:
+    <input type="text" name="brand" placeholder="Manufacturer" required="required" autofocus="autofocus">
+  </label>
+
+  <label >
+    Name:
+    <input type="text" name="name" placeholder="Model Name">
+  </label>
+
+  <label>
+    Polyphony:
+    <input type="number" name="polyphony" placeholder="Number of Voices">
+  </label>
+
+  <label>
+    Image:
+    <input type="url" name="image" placeholder="http://...">
+  </label>
+
+  <button>Submit Synth</button>
+</form>

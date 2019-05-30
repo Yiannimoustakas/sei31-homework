@@ -1,0 +1,25 @@
+<h2>Edit Synthesiser</h2>
+
+<form class="form" action="/synths/<%= @synth["id"] %>" method="post">
+  <label>
+    Brand:
+    <input type="text" name="brand" value="<%= @synth["brand"] %>" placeholder="Manufacturer" required="required" autofocus="autofocus">
+  </label>
+
+  <label >
+    Name:
+    <input type="text" name="name" value="<%= @synth["name"] %>" placeholder="Model Name">
+  </label>
+
+  <label>
+    Polyphony:
+    <input type="number" name="polyphony" value="<%= @synth["polyphony"] %>" placeholder="1">
+  </label>
+
+  <label>
+    Image:
+    <input type="url" name="image" value="<%= @synth["image"] %>" placeholder="http://...">
+  </label>
+
+  <button>Submit Edit</button>
+</form>

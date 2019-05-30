@@ -1,0 +1,28 @@
+<h1><%= @band.name %></h1>
+
+<%= image_tag @band.image, :alt => @band.name, :class => 'feature' %>
+
+<ul>
+  <li>
+    Name: <%= @band.name %>
+  </li>
+  <li>
+    Years Active: <%= @band.yearsactive %>
+  </li>
+  <li>
+    Genre: <%= @band.genre %>
+  </li>
+  <li>
+    Members: <%= @band.members %>
+  </li>
+
+</ul>
+
+<% @band.albums.each do |album| %>
+  <%= link_to image_tag(album.image, :class => 'thumb'), album %>
+<% end %>
+
+<div class="controls">
+  <%= link_to "Edit Band", edit_band_path(@band) %>
+  <%= link_to "Delete Band", band_path(@band), :method => 'delete', :data => {:confirm => 'Are you sure?'} %>
+</div>

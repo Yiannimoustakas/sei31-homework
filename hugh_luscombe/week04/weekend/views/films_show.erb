@@ -1,0 +1,22 @@
+<h2><%= @film["name"] %></h2>
+<h3>Year:
+  <em><%= @film["year"] %></em>
+</h3>
+
+<% unless @film.director.nil? %>
+  <h3>
+    Director:
+    <a href="/directors/<%= @film.director.id %>">
+      <%= @film.director.name %>
+    </a>
+  </h3>
+<% end %>
+
+<% unless @film["image"].nil? %>
+  <img class="feature" src="<%= @film["image"] %>" alt="<%= @film["name"] %>">
+<% end %>
+
+<div class="controls">
+  <a href="/films/<%= @film["id"] %>/edit">Edit</a>
+  <a href="/films/<%= @film["id"] %>/delete">Delete</a>
+</div>

@@ -1,0 +1,30 @@
+<h2>Edit Film</h2>
+
+<form action="/films/<%= @film["id"] %>" method="post">
+  <label>
+    Name:
+    <input type="text" name="name" value="<%= @film["name"] %>" placeholder="Name of Film" required="required" autofocus="autofocus">
+  </label>
+
+  <label>
+    Year:
+    <input type="number" name="year" value="<%= @film["year"]%>" placeholder="Year Released">
+  </label>
+
+  <label>
+    Image:
+    <input type="url" name="image" value="<%= @film["image"]%>" placeholder="http://..">
+  </label>
+
+  <label>
+      Director:
+      <select name="director_id">
+        <option></option>
+        <% Director.all.each do |director| %>
+          <option value="<%= director.id %>" <%= "selected" if director.id == @film.director_id %>><%= director.name %></option>
+        <% end %>
+      </select>
+  </label>
+
+  <button>Update Film</button>
+</form>

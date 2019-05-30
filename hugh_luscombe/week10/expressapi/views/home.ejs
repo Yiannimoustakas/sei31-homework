@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <% include partials/head.ejs %>
+  <body>
+    <% include partials/navbar.ejs %>
+    <h1>
+      hue's room
+    </h1>
+
+    <form action="/info">
+      <label>
+        search for light
+        <input type="number" name="lights" placeholder="1">
+      </label>
+      <input type="submit" value="GO">
+    </form>
+
+  </body>
+</html>

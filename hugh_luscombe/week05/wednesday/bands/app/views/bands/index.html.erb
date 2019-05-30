@@ -1,0 +1,21 @@
+<h1>All Bands</h1>
+
+<% @bands.each do |band| %>
+  <%= image_tag band.image, :class => 'thumb' %>
+
+  <ul>
+    <li>
+      Name: <%= link_to band.name, band_path(band.id) %>
+    </li>
+    <li>
+      Years Active: <%= band.yearsactive %>
+    </li>
+    <li>
+      Genre: <%= band.genre %>
+    </li>
+    <li>
+      Members: <%= band.members %>
+    </li>
+
+  </ul>
+<% end %>

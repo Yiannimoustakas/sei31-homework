@@ -1,0 +1,14 @@
+Big O
+
+O(1) is constant
+O(n) is linear
+O(n2) is exponential
+
+#1 O(n)
+#2 O(n2)
+#3 O(1) actually O(n)
+#4 O(1)
+#5 O(a+b) actually O(n)
+#6 O(n2) it's broken O(1)? if fixed could be O(n)
+#7 O(n2) actually O(n)
+#8 O(n2) actually O(n)
