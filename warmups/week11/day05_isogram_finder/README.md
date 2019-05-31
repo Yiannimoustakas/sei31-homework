@@ -4,7 +4,7 @@ An isogram is a word which has no repeating characters anywhere in the word. For
 
 - There must be no repeating letters anywhere in the string.
 
-- The strings are case insensitive. Different Cases letters are still counted.
+- The strings are case insensitive. Different Cased letters are still counted.
 
 ```
 isIsogram("Dermatoglyphics") //, true );
