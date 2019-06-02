@@ -1,8 +1,8 @@
 {
   "name": "exercises",
   "version": "1.0.0",
-  "description": "",
-  "main": "MergeSort.js",
+  "description": "Exercises for basic sorts",
+  "main": "BubbleSort.js",
   "directories": {
     "test": "test"
   },
