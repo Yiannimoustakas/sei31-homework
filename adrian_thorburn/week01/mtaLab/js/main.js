@@ -1,8 +1,8 @@
 //mta object and array for each line.
 const mta = {
-nLine:['8th', 'unionSquare', '23rd', '28th', '34th', 'timeSquare'],
-lLine:['8th', '6th', 'unionSquare', '3rd', '1st'],
-sLine:['grandCentral', '33rd', '28th', '23rd', 'unionSquare', 'astorPlace'],
+  nLine:['8th', 'unionSquare', '23rd', '28th', '34th', 'timeSquare'],
+  lLine:['8th', '6th', 'unionSquare', '3rd', '1st'],
+  sLine:['grandCentral', '33rd', '28th', '23rd', 'unionSquare', 'astorPlace'],
 };
 
 const planTrip = function(sl, ss, el, es) {

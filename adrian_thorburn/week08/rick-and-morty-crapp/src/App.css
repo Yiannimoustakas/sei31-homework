@@ -1,0 +1,19 @@
+.img-background {
+  position: fixed;
+  right: 0;
+  top: 0;
+  min-width: 100%;
+  min-height: 10%;
+  z-index: -1;
+
+}
+.container {
+  background: white;
+  background-color: rgba(239, 239, 239, 0.5);
+  min-height: 1000px;
+  border-radius: 5px;
+  padding: 0.5em;
+  width: 960px;
+  margin: 0 auto;
+
+}
